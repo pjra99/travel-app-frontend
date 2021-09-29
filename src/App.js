@@ -1,12 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import React from "react"
+import Signin from "./Screens/Signin"
+import Signup from "./Screens/Signup"
+import Home from "./Screens/Home"
+import Blogs from "./Screens/Blogs"
+import Upload from "./Screens/Upload"
+import User from "./Screens/User"
+import "./assets/main.css"
 
 function App() {
   return (
-    <div className="App">
-     Let's Start
-    </div>
+    <Router>
+   <Switch>
+
+     <Route exact path="/">
+     <Signin />
+     </Route>
+
+     <Route path="/signup">
+    <Signup />
+    </Route>
+
+     <Route path="/home">
+       <Home />
+     </Route>
+
+     <Route path="/blogs">
+       <Blogs />
+     </Route>
+
+     <Route path="/user">
+       <User />
+     </Route>
+
+     <Route path ="/upload">
+       <Upload />
+     </Route>
+   </Switch>
+    </Router>
   );
 }
 
 export default App;
+
