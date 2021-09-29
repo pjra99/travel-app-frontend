@@ -23,7 +23,7 @@ function Signin(){
    
    <div className=" ml-10 mt-6 mb-4">Email Address</div>
    <div className=" ml-10"><input className="bg-transparent border-b-2 w-96" /></div>
-   <div className="ml-10 mt-4 mb-4 ">Password</div>
+   <div className="ml-10 mt-4 mb-4">Password</div>
    <div className=" ml-10"><input className="bg-transparent border-b-2 w-96" /></div>
    <div className="mt-4 ml-10 text-green ">Forgot Password?</div>
    <button className="rounded-md text-center ml-10 w-96 p-2 border-darkgrey mt-4 ml- bg-green">Log In</button>
