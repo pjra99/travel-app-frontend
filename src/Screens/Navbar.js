@@ -1,5 +1,5 @@
 import React from "react"
-
+import {Link} from 'react-router-dom'
 function Navbar(){
     return (
 <div className="grid grid-cols-10 mt-10 font-body bg-white">
@@ -9,10 +9,10 @@ function Navbar(){
     <div></div>
     {/* <div></div> */}
     <div></div>
-    <div>Home</div>
-    <div>Blogs</div>
-    <div>Upload </div>
-    <div>Log In</div>
+    <Link to="/home"><div>Home</div></Link>
+    <Link to="/blogs"><div>Blogs</div></Link>
+   <Link to="/upload"><div>Upload </div></Link> 
+   <Link to="/signin"> <div>Log In</div></Link>
     <div></div>
     {/* <div></div> */}
 </div>
