@@ -1,8 +1,12 @@
 import React from "react"
+import Navbar from "./Navbar"
 
 function User(){
     return (
-  <div>This is the User Page</div>
+      <div>
+      <Navbar />
+      <div className="text-center mt-6">This is the User Page</div>
+    </div>
     );
 }
 
