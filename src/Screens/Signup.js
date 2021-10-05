@@ -6,13 +6,13 @@ import {Link} from "react-router-dom"
 
 function Signup(){
     return (
-  <div className="container-fluid" style={{ backgroundImage: "url(/background.png)",
+  <div className="container-fluid h-screen" style={{ backgroundImage: "url(/background.png)",
   backgroundSize: '100% 100%',
 }}>
    <Navbar />
    <div className="grid grid-cols-3">
  <div></div>
- <div className="bg-black text-white w-full h-100 opacity-80 rounded-xl mt-14">
+ <div className="bg-black text-white w-full h-100 opacity-80 rounded-xl mt-28">
    <div className="w-52 font-body mt-6 ml-10 text-lg">Get Started.</div>
    <div className="ml-10">Already have an account?<Link to="/signin"><span className="text-green"> Log in.</span></Link></div>
    {/* <GoogleButton style={{width: '12rem', padding: "1rem"}} /> */}

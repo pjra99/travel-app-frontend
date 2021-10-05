@@ -10,9 +10,9 @@ function Signin(){
   backgroundSize: '100% 100%',
 }}>
    <Navbar />
-   <div className="grid grid-cols-3">
+   <div className="grid grid-cols-3 h-screen">
  <div></div>
- <div className="bg-black text-white w-full h-100 opacity-80 rounded-xl mt-14">
+ <div className="bg-black text-white w-full h-100 opacity-80 rounded-xl mt-28">
    <div className="w-52 font-body mt-6 ml-10 text-lg">Login and explore your favourite destinations.</div>
    {/* <GoogleButton style={{width: '12rem', padding: "1rem"}} /> */}
    <div className="flex">
