@@ -24,6 +24,7 @@ module.exports = {
       grey: '#C4C4C4',
       lightgrey: '#CCCCCC',
       blue: '#3C5A9A',
+      glassblack: 'rgba(23, 36, 45, .8)'
     },
     spacing: {
       px: "1px",
