@@ -1,8 +1,10 @@
 import react from "react";
 
-function Placebyactivity(){
+function Placebyactivity(props){
     return(
-        <div className="h-52 w-48 bg-lightgreen ml-28 rounded-md p-2" style={{backgroundImage: "url(/camping.jpg)"}}>
+        <div className="h-80 w-56 bg-lightgreen rounded-md p-2 mx-10">
+            <img className="h-64 w-full rounded-md" src={props.img} />
+            <div className="text-center mt-3 text-green font-medium">{props.text}</div>
         </div>
     );
 }

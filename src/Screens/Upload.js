@@ -5,7 +5,7 @@ function Upload(){
     return (
       <div>
       <Navbar />
-      <div className="text-center mt-6">This is the Upload Page</div>
+      <div className="text-center">This is the Upload Page</div>
     </div>
     );
 }
