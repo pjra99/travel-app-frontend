@@ -47,6 +47,7 @@ function Home(){
         <Placebytype img="beach.jpg" name="Beach" />
 
        </div>
+       <div className="font-heading text-3xl pt-16 pb-10 text-center"><span className="text-green">T</span>ypes of Places</div>
       </div>
     );
 }
