@@ -3,6 +3,8 @@ import Navbar from "./Navbar"
 import {AiOutlineSearch} from "react-icons/ai"
 import Placebyactivity from "./Placebyactivity";
 import Slides from "./Slides.js"
+import Blogcard from "./Blogcard.js"
+import Placebytype from "./Placebytype";
 
 function Home(){
     return (
@@ -22,7 +24,7 @@ function Home(){
           {/* <div></div> */}
           </div>
           </div>
-        <div className="text-center font-heading pt-16 pb-10 text-3xl">What's your <span className="text-green">M</span>ood?</div>
+        <div className="text-center font-heading pt-16 pb-10 text-3xl"><span className="text-green">W</span>hat's your Mood?</div>
        <div className="flex flex-row justify-center flex-wrap"> 
          <div><Placebyactivity text="Camping" img="/camping.jpg" /></div>
          <div><Placebyactivity text="Trekking" img="/trekking.png" /></div>
@@ -31,6 +33,20 @@ function Home(){
        </div>
        <div className="text-center font-heading pt-16 pb-10 text-3xl"><span className="text-green">T</span>rending Places</div>
        <div><Slides /></div>
+       <div className="font-heading text-3xl pt-16 pb-10 text-center"><span className="text-green">T</span>rending Blogs</div>
+       <div className="flex flex-row justify-center flex-wrap">
+         <Blogcard />
+         <Blogcard />
+         <Blogcard />
+       </div>
+       <div className="font-heading text-3xl pt-16 pb-10 text-center"><span className="text-green">T</span>ypes of Places</div>
+       <div className="flex flex-wrap justify-center">
+        <Placebytype img="/snow-region.jpg" name="Snow Region" />
+        <Placebytype img="hillstation.jpeg" name="Hill station" />
+        <Placebytype img="valley.jfif" name="Valley" />
+        <Placebytype img="beach.jpg" name="Beach" />
+
+       </div>
       </div>
     );
 }

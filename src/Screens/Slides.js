@@ -1,6 +1,8 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 const slideImages = [
     {
@@ -16,8 +18,17 @@ const slideImages = [
       caption: 'Kerala'
     },
   ];
+
+  // const [caption, setCaption] = useState([])
+
+  // for(var i=0; i<slideImages.length; i++){
+  //   let ar = [...isVisited]
+  //   ar[i] = slideImages[i].caption
+  //   setCaption(ar)
+  // }
   
 function Slides(){
+
     return (
         <div className="slide-container h-96 ml-32 flex">
         <div><Slide className="w-668px">
@@ -29,7 +40,6 @@ function Slides(){
           ))} 
         </Slide>
         </div>
-    
         </div>
     )
 }
