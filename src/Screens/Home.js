@@ -58,6 +58,24 @@ function Home(){
        <Horizontalline />
        <Guidelinecard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris..." />
        </div>
+       <div className="grid grid-cols-2">
+   <div><img src="/whychooseus1.svg" className="h-80 ml-20 w-full" /></div>
+     <div className="ml-24"><h2 className="font-heading text-2xl font-light mb-6">Blogs by Travel <span className="text-green">Bloggers</span> </h2>
+     <p className="w-96">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+     </div>
+       </div>
+       <div className="grid grid-cols-2 mt-16">
+     <div className="ml-32 mt-6"><h2 className="font-heading text-2xl font-light mb-6">Blogs by Travel <span className="text-green">Bloggers</span> </h2>
+     <p className="w-96">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+     </div>
+     <div><img src="/whychooseus1.svg" className="h-80 -ml-7 w-full" /></div>
+       </div>
+       <div className="grid grid-cols-2 mt-16">
+   <div><img src="/whychooseus3.svg" className="h-80 ml-20 w-full" /></div>
+     <div className="ml-24"><h2 className="font-heading text-2xl font-light mb-6">Blogs by Travel <span className="text-green">Bloggers</span> </h2>
+     <p className="w-96">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+     </div>
+       </div>
       </div>
     );
 }
