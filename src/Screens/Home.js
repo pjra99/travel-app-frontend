@@ -7,6 +7,7 @@ import Blogcard from "./Blogcard.js"
 import Placebytype from "./Placebytype";
 import Guidelinecard from "./Guidelinecard";
 import Horizontalline from "./Horizontalline";
+import Footer from "../Components/Footer";
 
 function Home(){
     return (
@@ -76,6 +77,7 @@ function Home(){
      <p className="w-96">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
      </div>
        </div>
+       <Footer />
       </div>
     );
 }
