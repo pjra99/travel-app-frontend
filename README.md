@@ -21,7 +21,10 @@ The travel website should include a mix of the following:
 - Nearest Airport/Railway station information
 - Relevant tips on language and local dialect.
 
-### `yarn start`
+##REQUIREMENT
+
+- [ReactJS] - HTML enhanced for web apps!
+- [TailwindCSS] - awesome web-based text editor
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
