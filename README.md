@@ -2,7 +2,12 @@
 
 ## A TRAVELLING WEBSITE.. 
 
-In the project directory, you can run:
+
+{ 
+A website and an android app which will provide information to the users about specific tourists places. Information like tranposrtation cost from going to point A to B in that city/destination, means of available transports, popular/high rated restaurants/hotels. It will also contain blogs from different people who have already travelled to that place. 
+
+Apart from this it will also show, Trending places, Places by Category (ex: Hillstation, beach) and Places by various activities (ex: Paragliding, trekking)
+}
 
 ### `yarn start`
 
