@@ -9,6 +9,18 @@ A website and an android app which will provide information to the users about s
 Apart from this it will also show, Trending places, Places by Category (ex: Hillstation, beach) and Places by various activities (ex: Paragliding, trekking)
 }
 
+The travel website should include a mix of the following:
+
+-A brief summary of the area, with highlights of important places
+-Popular Restaurants & Hotel recommendations with web links to hotel and   booking sites
+-Information about recreation and outdoor activities
+-Guides to arts and culture, including museums, theaters, and other     attractions
+-Packing tips.
+-Maps and guides
+-Public transport information
+-Nearest Airport/Railway station information
+-Relevant tips on language and local dialect.
+
 ### `yarn start`
 
 Runs the app in the development mode.\
