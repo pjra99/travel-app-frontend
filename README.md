@@ -21,7 +21,7 @@ The travel website should include a mix of the following:
 - Nearest Airport/Railway station information
 - Relevant tips on language and local dialect.
 
-##REQUIREMENT
+## REQUIREMENT
 
 - [ReactJS] - HTML enhanced for web apps!
 - [TailwindCSS] - awesome web-based text editor
