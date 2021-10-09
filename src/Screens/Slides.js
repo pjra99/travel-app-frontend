@@ -27,10 +27,18 @@ const slideImages = [
   //   setCaption(ar)
   // }
   
+  // const [seconds, setSeconds] = useState(0);
+  
+  
+  // const getTimeRemaining = (e) => {
+  //     const total = Date.parse(e) - Date.parse(new Date());
+  //     // const seconds = ;
+  //     setSeconds(Math.floor((total / 1000) % 60));
+  // }
 function Slides(){
 
     return (
-        <div className="slide-container h-96 ml-32 flex">
+        <div className="slide-container h-96 ml-32 flex" >
         <div><Slide className="w-668px">
          {slideImages.map((slideImage, index)=> (
             <div className="each-slide w-668px flex" key={index}>
@@ -39,6 +47,11 @@ function Slides(){
             </div>
           ))} 
         </Slide>
+        </div>
+        <div className="w-96 ml-14">
+        <h2 className="font-heading text-2xl">Himachal Pradesh</h2>
+        <p className="mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+       <button className="mt-20 bg-black text-white w-60 h-10 text-xl rounded-md">Explore this Place More</button>
         </div>
         </div>
     )
