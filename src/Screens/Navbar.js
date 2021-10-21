@@ -8,10 +8,10 @@ function Navbar(){
     <div></div>
     <div></div>
     <div></div>
-    <Link to="/home"><div id="home"  >Home</div></Link>
-    <Link to="/blogs"><div id="blogs"   >Blogs</div></Link>
-   <Link to="/upload"><div id="upload"  >Upload </div></Link> 
-   <Link to="/signin"> <div id="login"  >Log In</div></Link>
+    <Link to="/home"><div id="home">Home</div></Link>
+    <Link to="/blogs"><div id="blogs">Blogs</div></Link>
+   <Link to="/upload"><div id="upload">Upload </div></Link> 
+   <Link to="/signin"> <div id="login">Log In</div></Link>
     <div></div>
 </div>
     );

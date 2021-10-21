@@ -7,6 +7,7 @@ import Blogs from "./Screens/Blogs"
 import Upload from "./Screens/Upload"
 import User from "./Screens/User"
 import "./assets/main.css"
+import SpecificDestination from "./Screens/SpecificDestination"
 
 function App() {
   return (
@@ -39,6 +40,10 @@ function App() {
 
      <Route path ="/upload">
        <Upload />
+     </Route>
+
+     <Route path="/destination" >
+       <SpecificDestination />
      </Route>
    </Switch>
     </Router>
