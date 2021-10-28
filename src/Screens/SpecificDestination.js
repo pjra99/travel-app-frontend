@@ -1,23 +1,30 @@
-import Navbar from "./Navbar"
+import Navbar from "../Components/Navbar";
+// import {AiOutlineSearch} from "react-icons/ai"
+import SpecificPlaceHeader from "../Components/SpecificPlaceHeader";
+import HotelCard from "../Components/HotelCard";
+
 function SpecificDestination(){
 return(
-    <div className="container-fluid">
-    <div className="header bg-lightgreen h-100 w-s">
-    <Navbar />
-   <div className="grid grid-cols-2 px-20 ">
-   <div className="w-100 mt-24">
-       <p className="font-heading text-darkgrey pb-6">Temp: 23° C, Humidity 87% </p>
-       <p className="pt-6 font-heading"><span className="text-4xl">Nanitaal,</span> Uttrakhand</p>
-       <img src="4star.svg" className="pb-6 -ml-1 h-12" />
-       <p className="font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p></div>
-   <div className="mt-24 ml-16"><img src="valley.jfif" className="h-100 w-98 rounded-md" /></div>
+   <div>
+     <SpecificPlaceHeader />
+     <div className="font-heading text-3xl text-center mt-16"><span className="text-green">H</span>otels</div>
+     <div className="flex mt-10">
+       <div className="flex-1 ml-48">
+         <div className=""><HotelCard /></div>
+         <div className="mt-10"><HotelCard /></div>
+       </div>
+       <div className="flex-1 -ml-32">
+       <div className="mt-10"><HotelCard /></div>
+       <div className="mt-10"><HotelCard /></div>
+       </div>
+       <div className="flex-1 -ml-32 pr-16 ">
+<div className="text-3xl font-heading">      <span className="text-green">D</span>iscover the Best Hotel 
+Deals in Nanitaal</div>
+<div className="mt-16">Get instant confirmation, last minute hotel deals. Find Hotels For Tonight Near to You. No cancellation fees. Exclusive deals. From Fasntastic Hotels To Modern Apartments. Easy and Secure payment. Best Price Guarantee. Free cancellation. Easy, Fast and Secure.</div>
+       </div>
+
+     </div>
    </div>
-    </div>
-   <div className="ml-16 mt-6">
-   <button className="bg-green text-white text-center py-2 px-8 rounded-md ml-4 mt-4 mr-5">Places near me</button>
-    <button className="bg-black text-white text-center py-2 px-8 rounded-md ml-2 mt-4">Trending Places</button>
-   </div>
-    </div>
 )
 }
 
