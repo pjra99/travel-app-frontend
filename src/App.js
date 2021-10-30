@@ -8,6 +8,7 @@ import Upload from "./Screens/Upload"
 import User from "./Screens/User"
 import "./assets/main.css"
 import SpecificDestination from "./Screens/SpecificDestination"
+import AllTouristsPlaces from "./Screens/AllTouristsPlaces"
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
 
      <Route path ="/upload">
        <Upload />
+     </Route>
+
+     <Route path ="/alltouristsplaces">
+       <AllTouristsPlaces />
      </Route>
 
      <Route path="/destination" >
