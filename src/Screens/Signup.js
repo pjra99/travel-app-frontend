@@ -1,5 +1,5 @@
 import React from "react"
-import Navbar from "./Navbar";
+import Navbar from "../Components/Navbar";
 import {FcGoogle} from "react-icons/fc"
 import {ImFacebook2} from "react-icons/im"
 import {Link} from "react-router-dom"
