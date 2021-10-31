@@ -9,6 +9,8 @@ import User from "./Screens/User"
 import "./assets/main.css"
 import SpecificDestination from "./Screens/SpecificDestination"
 import AllTouristsPlaces from "./Screens/AllTouristsPlaces"
+import PlacesByType from "./Screens/PlacesByType"
+import PlacesByActivity from "./Screens/PlacesByActivity"
 
 function App() {
   return (
@@ -49,6 +51,14 @@ function App() {
 
      <Route path="/destination" >
        <SpecificDestination />
+     </Route>
+
+     <Route path="/placesbytype">
+       <PlacesByType />
+     </Route>
+
+     <Route path="/placesbyactivity">
+       <PlacesByActivity />
      </Route>
    </Switch>
     </Router>
