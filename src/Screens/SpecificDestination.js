@@ -3,6 +3,8 @@ import HotelCard from "../Components/HotelCard";
 import PlaceCard from "../Components/PlaceCard";
 import SearchForTransport from "../Components/SearchForTransport";
 import {Link} from "react-router-dom"
+import RestaurantCard from "../Components/RestaurantCard";
+import Footer from "../Components/Footer";
 
 function SpecificDestination(){
 return(
@@ -44,6 +46,25 @@ Deals in Nanitaal</div>
 the actual Transportation cost.</div>
      </div>
      <div className="text-center font-heading text-3xl text-black mt-16"><span className="text-green">R</span>estaurants</div>
+     <div className="flex justify-between mt-10 px-32">
+       <div><RestaurantCard /></div>
+       <div><RestaurantCard /></div>
+       <div><RestaurantCard /></div>
+       <div><RestaurantCard /></div>
+     </div>
+     <div className="flex justify-between mt-10 px-32">
+       <div><RestaurantCard /></div>
+       <div><RestaurantCard /></div>
+       <div><RestaurantCard /></div>
+       <div><RestaurantCard /></div>
+     </div>
+     <div className="flex justify-between mt-10 px-32">
+       <div><RestaurantCard /></div>
+       <div><RestaurantCard /></div>
+       <div><RestaurantCard /></div>
+       <div><RestaurantCard /></div>
+     </div>
+     <Footer />
    </div>
 )
 }
