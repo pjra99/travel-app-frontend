@@ -1,7 +1,7 @@
 import Footer from "../Components/Footer"
 import HomePageHeader from "../Components/HomePageHeader"
 import Placebytype from "../Components/Placebytype"
-import SpecificPlaceHeader from "../Components/SpecificPlaceHeader"
+
 function PlacesByType(props){
     return(
         <div>
