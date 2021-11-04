@@ -2,7 +2,7 @@ import React from "react";
 
 function Blogcard(){
     return (
-        <div className="h-68 w-88 mx-5 bg-lightgreen rounded-md">
+        <div className="h-68 w-88 mx-5 bg-lightgreen rounded-md mb:mt-0 mt-3">
             <div className="flex">
                 <img src="/user-male.svg" className="h-20 w-20 ml-5 mt-5" />
                 <div className="text-xl ml-5 font-semibold mt-10">Nanitaal was great
