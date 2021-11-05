@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 
 function HomePageHeader(){
     return(
-        <div className="header h-668px" style={{backgroundImage: "url(/homebg.jpg)", backgroundSize: "cover"}}>
+        <div className="w-screen h-668px" style={{backgroundImage: "url(/homebg.jpg)", backgroundSize: "cover"}}>
             <Navbar />
             <div className="flex justify-center">
               {/* <div></div> */}

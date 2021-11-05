@@ -1,6 +1,6 @@
 function RestaurantCard(){
     return (
-        <div className="w-60 h-76 bg-lightgreen pt-1"><img src="somerestaurant.jpg" className="w-56 ml-2 mt-1 rounded-lg" />
+        <div className="w-60 h-76 bg-lightgreen pt-1 md:mt-0 mt-5"><img src="somerestaurant.jpg" className="w-56 ml-2 mt-1 rounded-lg" />
         <div className="flex mt-3 ml-3">
             <div className="1">
             <div className="text-green font-semibold">Xyz  Restaurant </div>
