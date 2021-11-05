@@ -30,13 +30,13 @@ Deals in Nanitaal</div>
        <div className="w-32"></div>
      </div>
      <div className="text-center mt-16 font-heading text-3xl text-black "><span className="text-green">T</span>ourist Place</div>
-     <div className="flex justify-center mt-10">
+     <div className="flex justify-between mt-10 px-28">
        <div><PlaceCard /></div>
        <div><PlaceCard /></div>
        <div><PlaceCard /></div>
        <div><PlaceCard /></div>
      </div>
-     <Link to="alltouristsplaces"><button className="mr-10 flex float-right mr-32 mt-6">View All <img src="view more.svg" className="w-6 h-6 ml-3" /></button></Link>
+     <Link to="alltouristsplaces"><button className="mr-10 flex float-right mr-32 pr-2 mt-6">View All <img src="view more.svg" className="w-6 h-6 ml-3" /></button></Link>
      <div className="text-3xl font-heading text-center mt-20 text-black ">
        <span className="text-green">T</span>ransportation cost
      </div>
