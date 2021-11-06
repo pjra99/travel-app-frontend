@@ -252,7 +252,7 @@ module.exports = {
     },
     fontFamily: {
       heading: "'Comfortaa', cursive",
-      body: "'Noto Serif', serif",
+      body: "'Poppins', sans-serif",
       // serif: [
       //   "ui-serif",
       //   "Georgia",

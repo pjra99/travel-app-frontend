@@ -4,7 +4,7 @@ import Footer from "../Components/Footer"
 
 function PlacesByActivity(){
     return (
-        <div>
+        <div className="container-fluid font-body">
             <SpecificPlaceHeader />
             <div className="text-center text-3xl font-heading mt-16 mb-10"><span className="text-green">W</span>hat's your Mood?</div>
             <div className="flex justify-between mx-32 px-3"> 

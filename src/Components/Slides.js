@@ -35,7 +35,7 @@ function Slides(){
         <div className="w-96 md:ml-14">
         <h2 className="font-heading text-2xl md:mt-0 mt-10">Himachal Pradesh</h2>
         <p className="mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-       <button className="mt-20 bg-black text-white w-60 h-10 text-xl rounded-md">Explore this Place More</button>
+       <button className="mt-14 bg-black text-white w-60 h-10 text-xl font-thin rounded-md">Explore More</button>
         </div>
         </div>
     )

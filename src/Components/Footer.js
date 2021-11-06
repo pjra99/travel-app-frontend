@@ -21,7 +21,7 @@ to help you discover and explore this world better.</p>
                 </ul>
             </div>
             <div className="ml-28">
-               <div className="flex"> <div>Subscribe to our newsletter</div> <button className="text-white bg-green ml-3 p-2 rounded-md"><img src="next.svg" /></button></div>
+               <div className="flex text-sm"> <div className="mt-2">Subscribe to our newsletter</div> <button className="text-white bg-green ml-3 p-2 rounded-md"><img src="next.svg" /></button></div>
                 <input className="py-1 mt-2 rounded-sm w-60" type="text" placeholder="  yourmail@xyz.com"/>
                 <div className="flex justify-center mt-2">
                     <img src="twitter.svg" className="w-9 mt-2" />

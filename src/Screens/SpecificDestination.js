@@ -5,10 +5,15 @@ import SearchForTransport from "../Components/SearchForTransport";
 import {Link} from "react-router-dom"
 import RestaurantCard from "../Components/RestaurantCard";
 import Footer from "../Components/Footer";
+import {AiOutlineSearch} from "react-icons/ai"
+import Blogcard from "../Components/Blogcard";
+import Guidelinecard from "../Components/Guidelinecard";
+import Horizontalline from "../Components/Horizontalline";
+import SpecialPackage from "../Components/SpecialPackage";
 
 function SpecificDestination(){
 return(
-   <div>
+   <div className="container-fluid text-black font-body">
      <SpecificPlaceHeader />
      <div className="font-heading text-3xl text-center mt-16 text-black "><span className="text-green">H</span>otels</div>
      <div className="flex flex-wrap mt-10 md:ml-0 ml-16">
@@ -30,40 +35,78 @@ Deals in Nanitaal</div>
        <div className="w-32"></div>
      </div>
      <div className="text-center mt-16 font-heading text-3xl text-black "><span className="text-green">T</span>ourist Place</div>
-     <div className="flex flex-wrap justify-between mt-10 md:px-32">
+     <div className="flex flex-wrap justify-between mt-10 md:px-36">
        <div><PlaceCard /></div>
        <div><PlaceCard /></div>
        <div><PlaceCard /></div>
        <div><PlaceCard /></div>
      </div>
      <Link to="alltouristsplaces"><button className="mr-10 flex float-right mr-32 pr-2 mt-6">View All <img src="view more.svg" className="w-6 h-6 ml-3" /></button></Link>
-     <div className="text-3xl font-heading text-center mt-20 text-black ">
+     <div className="text-3xl font-heading text-center mt-20 text-black">
        <span className="text-green">T</span>ransportation cost
      </div>
-     <div className="flex flex-wrap">
+     <div className="flex flex-wrap px-3">
        <div className="flex-1"><SearchForTransport /></div>
-       <div className="flex-1 font-heading text-2xl mt-10 text-black ">Search for a Place in Nanital to Know 
+       <div className="flex-1 font-heading text-2xl mt-10 text-black">Search for a Place in Nanital to Know 
 the actual Transportation cost.</div>
      </div>
-     <div className="text-center font-heading text-3xl text-black mt-16"><span className="text-green">R</span>estaurants</div>
+     <div className="text-center font-heading text-3xl text-black mt-16 mb-10"><span className="text-green">R</span>estaurants</div>
      <div className="flex flex-wrap justify-between mt-10 md:px-32 px-16">
+  <div className="flex-1">
+  <div className="flex flex-wrap px-3">
        <div><RestaurantCard /></div>
-       <div><RestaurantCard /></div>
-       <div><RestaurantCard /></div>
-       <div><RestaurantCard /></div>
+       <div className="md:mt-10 ml-10"><RestaurantCard /></div>
+       </div>
+      <div className="flex flex-wrap px-2">
+      <div><RestaurantCard /></div>
+       <div className="md:mt-10 ml-10"><RestaurantCard /></div>
+      </div>
+  </div>
+  <div className="flex-1">
+    <div className="text-2xl font-heading font-200 mt-16">
+    Search for the Restaurants, know about the user ratings and choose where to Eat!
+    </div>
+    <div className="bg-lightgreen w-99 h-44 pt-3 mt-16">
+   <div className="flex flex-wrap">
+   <div><input type="text" className="py-3 px-24 ml-4 rounded-md" placeholder="What do you want to eat?" /></div>
+   <div ><button className="bg-green rounded-md ml-2 w-14 h-12"><AiOutlineSearch className="text-white ml-3" size={36}/></button></div>
+   </div>
+   <div className="text-center mt-2 text-darkgrey mt-3">OR</div>
+   <button className="md:px-36 pr-3 bg-black text-white ml-5 mt-5 py-3 rounded-md font-body">Restaurants Near Me</button>
+    </div>
+    <button className="bg-green text-white text-xl pt-2 font-heading text-center py-2 px-8 rounded-md md:mt-32 md:ml-0 ml-5">Explore more</button>
+  </div>
      </div>
-     <div className="flex flex-wrap justify-between mt-10 md:px-32 px-16">
-       <div><RestaurantCard /></div>
-       <div><RestaurantCard /></div>
-       <div><RestaurantCard /></div>
-       <div><RestaurantCard /></div>
+     <div className="text-3xl font-heading text-center mt-16 mb-10"><span className="text-green">B</span>logs</div>
+     <div className="flex justify-center flex-wrap px-28 mx-0.5">
+     <Blogcard />
+     <div className="flex-1 ml-5">
+       <div className="text-2xl font-heading mb-5 mt-2">Blogs from Verified Travellers</div>
+       <div className="text-xl font-body">Blogs are a great source of Information about places, hotels and Destinations in general. Read blogs from different people as well as Verified Travellers.</div>
      </div>
-     <div className="flex flex-wrap justify-between mt-10 md:px-32 px-16">
-       <div><RestaurantCard /></div>
-       <div><RestaurantCard /></div>
-       <div><RestaurantCard /></div>
-       <div><RestaurantCard /></div>
-     </div>
+     <div className="flex-1"><button className="md:px-16 bg-black text-white mt-5 py-3 rounded-md font-body float-right mr-8">More Blogs</button></div>
+       </div>
+     <div className="flex justify-center flex-wrap">
+         <Blogcard />
+         <Blogcard />
+         <Blogcard />
+       </div>
+       <div className="text-3xl text-center mt-16 mb-10 font-heading"><span className="text-green">U</span>pdates</div>
+      <div className="flex justify-between px-32">
+      <Guidelinecard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+       <Horizontalline />
+       <Guidelinecard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+       <Horizontalline />
+       <Guidelinecard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+      </div>
+      <div className="text-center text-3xl font-heading mt-16 mb-10"><span className="text-green">S</span>pecial Packages</div>
+      <div className="flex justify-between px-32">
+        <SpecialPackage img="hotelroom.jpeg" text="5 days, 4 nights" rating="4.2" price="5999/-" dealer="Kumar Travels" />
+        <SpecialPackage img="hotelroom.jpeg" text="5 days, 4 nights" rating="4.2" price="5999/-" dealer="Kumar Travels" />
+        <SpecialPackage img="hotelroom.jpeg" text="5 days, 4 nights" rating="4.2" price="5999/-" dealer="Kumar Travels" />
+        <SpecialPackage img="hotelroom.jpeg" text="5 days, 4 nights" rating="4.2" price="5999/-" dealer="Kumar Travels" />
+      </div>
+      <div className="text-3xl text-center font-heading mt-16 mb-10"><span className="text-green">S</span>imilar Places</div>
      <Footer />
    </div>
 )

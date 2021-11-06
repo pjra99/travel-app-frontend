@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar"
 
 function Blogs(){
     return (
-      <div>
+      <div className="container-fluid font-body">
         <Navbar />
   <div className="text-center">This is the Blogs Page</div>
       </div>

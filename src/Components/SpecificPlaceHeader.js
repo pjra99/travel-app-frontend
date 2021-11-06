@@ -23,16 +23,18 @@ function SpecificPlaceHeader(){
             <button className="bg-black text-white text-center px-2 py-2 md:px-8 rounded-md md:ml-2 mt-4 ml-36">Places to visit</button>
               </div>
           <div className="flex flex-wrap mt-36 md:mt-20">
-          <div className="h-32 md:w-96 w-98 ml-4 bg-lightgreen rounded-lg md:ml-36">
+          {/* Hara Box */}
+          <div className="h-32 w-98 ml-4 bg-lightgreen rounded-lg md:ml-36">
               <div className="flex flex-row">
               <div className="text-green mt-5 md:ml-5 ml-2 font-light text-2xl"> Search for the Best Hotels</div> 
-            <div><button className="bg-green rounded-md  mt-4 ml-9 w-12 h-10"><AiOutlineSearch className="text-white ml-2" size={34}/></button></div> 
+            <div><button className="bg-green rounded-md  mt-4 ml-6 w-12 h-10"><AiOutlineSearch className="text-white ml-2" size={34}/></button></div> 
               </div>
               <div className="flex">
                   <input type="date" placeholder="Check in" className="md:ml-5 ml-2 mr-3 mt-4 py-2 rounded-md"  />
                   <input type="date" placeholder="Check out" className="mt-4  rounded-md" />
               </div>
            </div>
+
            <div className="text-2xl font-light w-100 font-heading md:mt-0 mt-10 md:ml-40 pl-3 text-black">
          Enter the check in and check out 
         dates and know about the availibility 

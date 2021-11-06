@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 
 function Signup(){
     return (
-  <div className="container-fluid h-screen" style={{ backgroundImage: "url(/background.png)",
+  <div className="container-fluid h-screen text-black font-body" style={{ backgroundImage: "url(/background.png)",
   backgroundSize: '100% 100%',
 }}>
    <Navbar />
@@ -17,8 +17,8 @@ function Signup(){
    <div className="ml-10">Already have an account?<Link to="/signin"><span className="text-green"> Log in.</span></Link></div>
    {/* <GoogleButton style={{width: '12rem', padding: "1rem"}} /> */}
    <div className="flex">
-   <button className="border-2  text-black mt-4   ml-10 mr-2 px-2 py-1 rounded-md bg-white w-42 flex"><FcGoogle size={30} className="-ml-1" /><span className="mt-1 text-sm">Sign Up with Google</span></button>
-   <button className=" mt-4 ml-2 p-2 rounded-md px-2 py-1 bg-blue flex h-10"><ImFacebook2 size={30} className="mt-0.5 -ml-0.5" /><span className="ml-1 mt-1.5 text-sm">Sign Up with Facebook</span></button>
+   <button className="border-2 text-black mt-4 ml-10 px-2 py-1 rounded-md bg-white w-42 flex"><FcGoogle size={30} className="-ml-1" /><span className="ml-1 mt-1 pt-0.5 text-xs">Continue with Google</span></button>
+   <button className=" mt-4 ml-2 p-2 rounded-md px-2 py-1 bg-blue flex h-14 md:h-10"><ImFacebook2 size={30} className=" -ml-0.5" /><span className="ml-2 mt-2 text-xs">Continue with Facebook</span></button>
    </div>
    <div className=" ml-10 mt-6 mb-4">Email Address</div>
    <div className=" ml-10"><input className="bg-transparent border-b-2 w-96" /></div>

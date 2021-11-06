@@ -9,10 +9,9 @@ import Footer from "../Components/Footer";
 import HomePageHeader from "../Components/HomePageHeader";
 import {Link} from "react-router-dom"
 
-
 function Home(){
     return (
-      <div className="container-fluid">
+      <div className="container-fluid font-body text-black">
      <HomePageHeader />
         <div className="text-center font-heading mt-16 text-3xl"><span className="text-green">W</span>hat's your Mood?</div>
        <div className="flex flex-wrap justify-between md:px-32 md:mx-1 md:ml-0 ml-20 mt-10">
@@ -65,7 +64,7 @@ function Home(){
      <div className=""><h2 className="font-heading text-2xl font-light mb-6">Blogs by Travel <span className="text-green">Bloggers</span> </h2>
      <p className="w-96">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
      </div>
-       </div>
+       </div>      
        <Footer />
       </div>
     );
