@@ -7,13 +7,13 @@ function PlacesByActivity(){
         <div className="container-fluid font-body">
             <SpecificPlaceHeader />
             <div className="text-center text-3xl font-heading mt-16 mb-10"><span className="text-green">W</span>hat's your Mood?</div>
-            <div className="flex justify-between mx-32 px-3"> 
+            <div className="flex flex-wrap justify-between md:mx-32 md:px-3 px-20 mx-3"> 
          <div><Placebyactivity text="Camping" img="/camping.jpg" /></div>
          <div><Placebyactivity text="Trekking" img="/trekking.png" /></div>
          <div><Placebyactivity text="Mountain Climbing" img="/mountainclimbing.jpg" /></div>
          <div><Placebyactivity text="Paragliding" img="/paragliding.jpg" /></div>
        </div>
-       <div className="flex justify-between mx-32 px-3 mt-10"> 
+       <div className="flex flex-wrap justify-between md:mx-32 md:px-3 px-20 mx-3 mt-10"> 
          <div><Placebyactivity text="Camping" img="/camping.jpg" /></div>
          <div><Placebyactivity text="Trekking" img="/trekking.png" /></div>
          <div><Placebyactivity text="Mountain Climbing" img="/mountainclimbing.jpg" /></div>

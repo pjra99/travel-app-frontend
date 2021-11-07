@@ -10,9 +10,9 @@ function SpecificPlaceHeader(){
             <Navbar />
            <div className="flex flex-wrap justify-between md:mx-36 ">
            <div className="w-100 mt-24">
-               <p className="font-heading text-darkgrey pb-6">Temp: 23° C, Humidity 87% </p>
-               <p className="pt-6 font-heading"><span className="text-4xl">Nanitaal,</span> Uttrakhand</p>
-               <img src="4star.svg" className="pb-6 pl-1 h-12" />
+               <p className="font-heading text-darkgrey pb-6 md:ml-0 ml-5">Temp: 23° C, Humidity 87% </p>
+               <p className="pt-6 font-heading"><span className="text-4xl md:ml-0 ml-5">Nanitaal,</span> Uttrakhand</p>
+               <img src="4star.svg" className="pb-6 pl-1 h-12 md:ml-0 ml-4" />
                <p className="font-body md:px-0 px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                </div>
            <div className="mt-24"><img src="valley.jfif" className="md:h-100 md:w-100 h-60 w-60 rounded-md" /></div>
