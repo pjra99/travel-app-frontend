@@ -10,9 +10,9 @@ function Signup(){
   backgroundSize: '100% 100%',
 }}>
    <Navbar />
-   <div className="grid grid-cols-3">
+   <div className="flex justify-center flex-wrap">
  <div></div>
- <div className="bg-black text-white w-full h-100 opacity-80 rounded-xl mt-28">
+ <div className="bg-black text-white pr-11 md:h-100 opacity-80 rounded-xl  mt-36 md:mt-28 md:mx-0 mx-3 pb-5">
    <div className="w-52 font-body mt-6 ml-10 text-lg">Get Started.</div>
    <div className="ml-10">Already have an account?<Link to="/signin"><span className="text-green"> Log in.</span></Link></div>
    {/* <GoogleButton style={{width: '12rem', padding: "1rem"}} /> */}
@@ -21,13 +21,13 @@ function Signup(){
    <button className=" mt-4 ml-2 p-2 rounded-md px-2 py-1 bg-blue flex h-14 md:h-10"><ImFacebook2 size={30} className=" -ml-0.5" /><span className="ml-2 mt-2 text-xs">Continue with Facebook</span></button>
    </div>
    <div className=" ml-10 mt-6 mb-4">Email Address</div>
-   <div className=" ml-10"><input className="bg-transparent border-b-2 w-96" /></div>
+   <div className=" ml-10"><input className="bg-transparent border-b-2 w-72 md:w-96" /></div>
    <div className="ml-10 mt-4 mb-4">Password</div>
-   <div className=" ml-10"><input className="bg-transparent border-b-2 w-96" /></div>
+   <div className=" ml-10"><input className="bg-transparent border-b-2 w-72 md:w-96" /></div>
    <div className="ml-10 mt-4 mb-4">Confirm Password</div>
-   <div className=" ml-10"><input className="bg-transparent border-b-2 w-96" /></div>
+   <div className=" ml-10"><input className="bg-transparent border-b-2 w-72 md:w-96" /></div>
    <div className="mt-3 ml-10"><input type="checkbox" /> I agree to <span className="text-green">terms</span> & <span className="text-green">conditions.</span></div>
-   <button className="rounded-md text-center ml-10 w-96 p-2 border-darkgrey mt-6 bg-green">Log In</button>
+   <button className="rounded-md text-center ml-10 p-2 border-darkgrey mt-6 bg-green w-72 md:w-96">Log In</button>
  </div>
  <div></div>
    </div>
