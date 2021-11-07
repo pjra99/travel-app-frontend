@@ -24,10 +24,10 @@ to help you discover and explore this world better.</p>
                <div className="flex flex-wrap text-sm"> <div className="md:mt-2 mt-5">Subscribe to our newsletter</div> <button className="text-white bg-green ml-3 md:p-2 px-2 rounded-md"><img src="next.svg" /></button></div>
                 <input className="py-1 mt-2 rounded-sm w-60" type="text" placeholder="  yourmail@xyz.com"/>
                 <div className="flex justify-center mt-2">
-                    <img src="twitter.svg" className="w-9 mt-2" />
-                    <img src="facebook icon.svg" className="w-9 mt-2 ml-8" />
-                    <img src="googleplus.svg" className="w-9 mt-2 ml-8" />
-                    <img src="youtube.svg" className="w-9 mt-2 ml-8" />
+                    <img src="twitter.svg" className="w-9 mt-2" alt="twitter" />
+                    <img src="facebook icon.svg" className="w-9 mt-2 ml-8" alt="facebook" />
+                    <img src="googleplus.svg" className="w-9 mt-2 ml-8" alt="Gmail" />
+                    <img src="youtube.svg" className="w-9 mt-2 ml-8" alt="Youtube" />
                 </div>
             </div>
         </div>

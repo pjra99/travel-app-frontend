@@ -14,7 +14,7 @@ function Home(){
       <div className="container-fluid font-body text-black">
      <HomePageHeader />
         <div className="text-center font-heading mt-16 text-3xl"><span className="text-green">W</span>hat's your Mood?</div>
-       <div className="flex flex-wrap justify-between md:px-32 md:mx-1 md:ml-0 ml-20 mt-10">
+       <div className="flex flex-wrap justify-between md:px-32 md:mx-1 md:ml-0 px-20 mx-3 mt-10">
        <div><Placebyactivity text="Camping" img="/camping.jpg" /></div>
          <div><Placebyactivity text="Trekking" img="/trekking.png" /></div>
          <div><Placebyactivity text="Mountain Climbing" img="/mountainclimbing.jpg" /></div>
@@ -30,14 +30,14 @@ function Home(){
          <Blogcard />
        </div>
        <div className="font-heading text-3xl mt-16 mb-10 text-center"><span className="text-green">T</span>ypes of Places</div>
-       <div className="flex flex-wrap justify-between md:px-32 md:mx-1 md:ml-0 ml-20 ">
+       <div className="flex flex-wrap justify-between md:px-32 md:mx-1 md:ml-0 px-20 mx-3 ">
         <Placebytype img="/snow-region.jpg" name="Snow Region" />
         <Placebytype img="hillstation.jpeg" name="Hill station" />
         <Placebytype img="valley.jfif" name="Valley" />
         <Placebytype img="beach.jpg" name="Beach" />
        </div>
        <Link to="/placesbytype"><button className="mr-10 flex float-right mr-32 pr-2 mt-6">View All <img src="view more.svg" className="w-6 h-6 ml-3" /></button></Link>
-       <div className="font-heading text-3xl pt-16 pb-10 text-center"><span className="text-green">T</span>ravel Guidelines</div>
+       <div className="font-heading text-3xl pt-16 pb-10 text-center md:mt-0 mt-5"><span className="text-green">T</span>ravel Guidelines</div>
        <div className="flex flex-row flex-wrap justify-center">
        <Guidelinecard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris..." />
        <Horizontalline />

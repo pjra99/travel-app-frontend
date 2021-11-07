@@ -24,7 +24,7 @@ function SpecificPlaceHeader(){
               </div>
           <div className="flex flex-wrap mt-36 md:mt-20">
           {/* Hara Box */}
-          <div className="md:h-32 h-44 w-80 md:w-98 ml-4 bg-lightgreen rounded-lg md:ml-36">
+          <div className="md:h-32 h-44 w-80 md:w-98 ml-4 bg-lightgreen rounded-lg md:ml-36 ml-11">
               <div className="flex flex-row">
               <div className="text-green mt-5 md:ml-5 ml-2 font-light md:text-2xl"> Search for the Best Hotels</div> 
             <div><button className="bg-green rounded-md  mt-4 ml-6 w-12 h-10"><AiOutlineSearch className="text-white ml-2" size={34}/></button></div> 
