@@ -23,12 +23,6 @@ function AllRestaurants() {
         <RestaurantCard />
         <RestaurantCard />
       </div>
-      <div className="flex flex-wrap justify-center md:justify-between md:px-36 mt-10">
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-      </div>
       <Footer />
     </div>
   );
