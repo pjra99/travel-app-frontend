@@ -12,7 +12,7 @@ function Signup(){
    <Navbar />
    <div className="flex justify-center flex-wrap">
  <div></div>
- <div className="bg-black text-white pr-11 md:h-100 opacity-80 rounded-xl  mt-36 md:mt-28 md:mx-0 mx-3 pb-5">
+ <div className="bg-black text-white pr-11 opacity-80 rounded-xl  mt-36 md:mt-28 mx-3 bg-black text-white pr-11 md:h-100 opacity-80 rounded-xl  mt-36 md:mt-28 md:mx-0 mx-3 pb-5">
    <div className="w-52 font-body mt-6 ml-10 text-lg">Get Started.</div>
    <div className="ml-10">Already have an account?<Link to="/signin"><span className="text-green"> Log in.</span></Link></div>
    {/* <GoogleButton style={{width: '12rem', padding: "1rem"}} /> */}
@@ -27,7 +27,7 @@ function Signup(){
    <div className="ml-10 mt-4 mb-4">Confirm Password</div>
    <div className=" ml-10"><input className="bg-transparent border-b-2 w-72 md:w-96" /></div>
    <div className="mt-3 ml-10"><input type="checkbox" /> I agree to <span className="text-green">terms</span> & <span className="text-green">conditions.</span></div>
-   <button className="rounded-md text-center ml-10 p-2 border-darkgrey mt-6 bg-green w-72 md:w-96">Log In</button>
+   <Link to="/home"><button className="rounded-md text-center ml-10 p-2 border-darkgrey mt-6 bg-green md:w-96">Sign Up</button></Link>
  </div>
  <div></div>
    </div>
