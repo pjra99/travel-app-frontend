@@ -12,6 +12,7 @@ import AllTouristsPlaces from "./Screens/AllTouristsPlaces";
 import PlacesByType from "./Screens/PlacesByType";
 import PlacesByActivity from "./Screens/PlacesByActivity";
 import AllRestaurants from "./Screens/AllRestaurants";
+import HotelsPage from "./Screens/HotelsPage";
 
 function App() {
   return (
@@ -63,6 +64,10 @@ function App() {
 
         <Route path="/allrestaurants">
           <AllRestaurants />
+        </Route>
+
+        <Route path="/hotelspage">
+          <HotelsPage />
         </Route>
       </Switch>
     </Router>
