@@ -1,4 +1,6 @@
 import SpecificPlaceHeader from "../Components/SpecificPlaceHeader";
+import Dropanddrag from "../Components/Dropanddrag";
+
 import Photos from "../Components/Photos";
 import Footer from "../Components/Footer";
 
@@ -8,9 +10,9 @@ function PhotoGallery() {
       <SpecificPlaceHeader />
       {/*dropanddrag*/}
       <div className="flex flex-wrap justify-between md:px-40 mr-30 mt-20 px-200">
-        {/* <div>
-          <DragandDown />
-       </div> */}
+        <div>
+          <Dropanddrag />
+        </div>
 
         <div className="">
           <h2 className="font-heading text-2xl font-light mb-8 mr:50">
