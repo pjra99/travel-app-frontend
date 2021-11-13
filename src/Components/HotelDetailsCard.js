@@ -1,11 +1,11 @@
 function HotelDetailsCard({ name, img1, img2, checkin, checkout, overview }) {
   return (
-    <div className="w-s border-2 border-grey mx-36 mt-10 rounded-md p-4 flex font-body text-black">
+    <div className="w-s border-2 border-grey mx-2 md:mx-36 mt-10 rounded-md p-4 flex flex-wrap font-body text-black">
       <div className="pehla-col">
         <img
           src="entrance.jpg"
           alt="Hotel Main Image"
-          className="w-97 rounded-t-md"
+          className="md:w-97 rounded-t-md"
         />
         <div className="flex flex-wrap mt-2">
           <img src="hotelroom.jpeg" className="w-32 h-24 rounded-bl-md" />
@@ -13,8 +13,10 @@ function HotelDetailsCard({ name, img1, img2, checkin, checkout, overview }) {
           <img src="hotelroom.jpeg" className="w-32 h-24 rounded-br-md" />
         </div>
       </div>
-      <div className="dusra-col w-80 ml-10">
-        <div className="text-4xl font-heading text-green">Lakeside Inn</div>
+      <div className="dusra-col md:w-80 md:ml-10">
+        <div className="text-4xl font-heading text-green md-mt-0 mt-5">
+          Lakeside Inn
+        </div>
         <img src="4star.svg" className="w-36 -ml-1 mt-2" />
         <div className="text-darkgrey mt-5">Check in 2 PM | Check out 2 PM</div>
         <div className="flex mt-5 ">
@@ -23,19 +25,19 @@ function HotelDetailsCard({ name, img1, img2, checkin, checkout, overview }) {
             Hand Sanitizer / Temperature Screening
           </p>
         </div>
-        <div className="flex mt-1">
+        <div className="flex flex-wrap mt-1">
           <img src="tick.svg" />{" "}
           <p className="text-darkgrey ml-2 text-sm">
             Hand Sanitizer / Temperature Screening
           </p>
         </div>
-        <div className="flex mt-1">
+        <div className="flex flex-wrap mt-1">
           <img src="tick.svg" />{" "}
           <p className="text-darkgrey ml-2 text-sm">
             Hand Sanitizer / Temperature Screening
           </p>
         </div>
-        <div className="flex mt-1">
+        <div className="flex flex-wrap mt-1">
           <img src="tick.svg" />{" "}
           <p className="text-darkgrey ml-2 text-sm">
             Hand Sanitizer / Temperature Screening
@@ -48,16 +50,16 @@ function HotelDetailsCard({ name, img1, img2, checkin, checkout, overview }) {
           minim veniam.
         </p>
       </div>
-      <div className="teesra-col pl-10">
-        <div className="w-68 h-40 bg-lightgreen pt-2 rounded-sm pl-4">
-          <div className="flex">
+      <div className="teesra-col md:pl-10">
+        <div className="md:w-68 h-40 bg-lightgreen pt-2 rounded-sm pl-4">
+          <div className="flex flex-wrap">
             <div className="text-xl font-heading">Best Deal</div>
             <div className="text-sm text-darkgrey mt-1 pt-0.5 ml-10">
               Goibibo.com
             </div>{" "}
           </div>
           <div className="text-green">₹2101/night</div>
-          <div className="flex mt-14">
+          <div className="flex flex-wrap mt-14">
             <img src="tick.svg" alt="Check Icon" />
             <div className="text-sm text-darkgrey ml-1 mt-1   ">
               Free Cancellation
