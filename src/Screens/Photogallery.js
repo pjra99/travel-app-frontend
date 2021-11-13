@@ -1,7 +1,9 @@
 import SpecificPlaceHeader from "../Components/SpecificPlaceHeader";
 import Dropanddrag from "../Components/Dropanddrag";
+import FirstPhotos from "../Components/FirstPhotos";
 
 import Photos from "../Components/Photos";
+
 import Footer from "../Components/Footer";
 
 function PhotoGallery() {
@@ -29,7 +31,7 @@ function PhotoGallery() {
         <span className="text-green">P</span>hotos
       </div>
       <div className="flex justify-center  mt-8">
-        <Photos />
+        <FirstPhotos />
         <Photos />
         <Photos />
       </div>
