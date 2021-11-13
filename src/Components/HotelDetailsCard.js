@@ -14,7 +14,7 @@ function HotelDetailsCard({ name, img1, img2, checkin, checkout, overview }) {
         </div>
       </div>
       <div className="dusra-col md:w-80 md:ml-10">
-        <div className="text-4xl font-heading text-green md-mt-0 mt-5">
+        <div className="text-4xl font-heading text-green md-mt-0 mt-1">
           Lakeside Inn
         </div>
         <img src="4star.svg" className="w-36 -ml-1 mt-2" />

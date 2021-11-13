@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 function Navbar() {
   return (
-    <div className="flex absolute mt-10 w-screen font-body bg-white justify-between">
+    <div className="flex absolute mt-10 w-full font-body bg-white justify-between">
       <div className="text-green font-heading md:ml-36 ml-3">
         Travel Website
       </div>

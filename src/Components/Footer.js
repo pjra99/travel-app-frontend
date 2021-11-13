@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="flex flex-wrap mt-16 bg-lightgreen text-green py-6 w-screen">
+    <div className="flex flex-wrap mt-16 bg-lightgreen text-green py-6">
       <div className="w-68 md:ml-32 ml-20">
         <h2 className="text-xl font-heading mb-4">TravelEzy</h2>
         <p className="font-semibold">
@@ -8,7 +8,7 @@ function Footer() {
           explore this world better.
         </p>
       </div>
-      <div className="md:ml-44 ml-20 md:mt-0 mt-5">
+      <div className="md:ml-40 ml-20 md:mt-0 mt-5">
         <h2 className="mb-4 font-semibold">About Us</h2>
         <ul>
           <li className="mb-2">What do we do?</li>
@@ -26,7 +26,7 @@ function Footer() {
         <div className="flex flex-wrap text-sm">
           {" "}
           <div className="md:mt-2 mt-5">Subscribe to our newsletter</div>{" "}
-          <button className="text-white bg-green ml-8 md:p-2 px-2 rounded-md">
+          <button className="text-white bg-green ml-3 md:p-2 px-2 rounded-md">
             <img src="next.svg" />
           </button>
         </div>
