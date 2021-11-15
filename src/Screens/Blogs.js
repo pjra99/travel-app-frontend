@@ -3,6 +3,7 @@ import PlaceCard from "../Components/Blogcard";
 import Footer from "../Components/Footer";
 import Blogcard from "../Components/Blogcard";
 
+
 function Blogs() {
   return (
     <div>
@@ -28,6 +29,9 @@ function Blogs() {
         <Blogcard />
         <Blogcard />
         <Blogcard />
+
+
+
       </div>
 
       <Footer />
