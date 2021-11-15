@@ -1,6 +1,7 @@
-import SpecificPlaceHeader from "../Components/SpecificPlaceHeader"
-import PlaceCard from "../Components/PlaceCard"
-import Footer from "../Components/Footer"
+import SpecificPlaceHeader from "../Components/SpecificPlaceHeader";
+import PlaceCard from "../Components/PlaceCard";
+import Footer from "../Components/Footer";
+
 
 function AllTouristsPlaces(){
     return (
@@ -27,8 +28,47 @@ function AllTouristsPlaces(){
      </div>
 
      <Footer />
+
         </div>
-    )
+        <div>
+          <PlaceCard />
+        </div>
+        <div>
+          <PlaceCard />
+        </div>
+      </div>
+      <div className="flex justify-center mt-10">
+        <div>
+          <PlaceCard />
+        </div>
+        <div>
+          <PlaceCard />
+        </div>
+        <div>
+          <PlaceCard />
+        </div>
+        <div>
+          <PlaceCard />
+        </div>
+      </div>
+      <div className="flex justify-center mt-10">
+        <div>
+          <PlaceCard />
+        </div>
+        <div>
+          <PlaceCard />
+        </div>
+        <div>
+          <PlaceCard />
+        </div>
+        <div>
+          <PlaceCard />
+        </div>
+      </div>
+
+      <Footer />
+    </div>
+  );
 }
 
-export default AllTouristsPlaces
+export default AllTouristsPlaces;

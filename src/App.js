@@ -11,8 +11,12 @@ import SpecificDestination from "./Screens/SpecificDestination";
 import AllTouristsPlaces from "./Screens/AllTouristsPlaces";
 import PlacesByType from "./Screens/PlacesByType";
 import PlacesByActivity from "./Screens/PlacesByActivity";
+
+import PhotoGallery from "./Screens/Photogallery";
+
 import AllRestaurants from "./Screens/AllRestaurants";
 import HotelsPage from "./Screens/HotelsPage";
+
 
 function App() {
   return (
@@ -62,12 +66,17 @@ function App() {
           <PlacesByActivity />
         </Route>
 
+
+        <Route path="/photogallery">
+          <PhotoGallery />
+</Route>
         <Route path="/allrestaurants">
           <AllRestaurants />
         </Route>
 
         <Route path="/hotelspage">
           <HotelsPage />
+
         </Route>
       </Switch>
     </Router>
