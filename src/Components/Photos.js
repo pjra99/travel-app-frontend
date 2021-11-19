@@ -1,6 +1,6 @@
 function Photos() {
   return (
-    <div className="h-45 w-70 pl-7 pr-5 ml-10 relative">
+    <div className="h-45 w-80 relative">
       <img className="absolute right-7 top-2" src="Ellipse 3.png" />
 
       <img className="absolute right-8 top-3" src="vector.png" />

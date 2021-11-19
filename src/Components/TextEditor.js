@@ -1,8 +1,8 @@
-function TextEditor() {
+function TextEditor({ title }) {
   return (
     <div className="flex-col justify-between mt-16 rounded-md border-2 border-lightgrey mx-36">
       <div className="flex justify-center h-12 pt-3 mb-2 bg-black text-white rounded-t-md font-heading text-xl">
-        Been to this place? Write a Blog!
+        {title}
       </div>
       <div className="px-2">
         <textarea

@@ -56,13 +56,21 @@ function SpecificDestination() {
         <div className="w-32"></div>
       </div>
       <div className="text-center mt-16 font-heading text-3xl text-black">
-        <span className="text-green">T</span>ourist Place
+        <span className="text-green">T</span>ourist Places
       </div>
       <div className="flex flex-wrap justify-between mt-10 md:ml-0 ml-24 md:px-36">
-        <PlaceCard />
-        <PlaceCard />
-        <PlaceCard />
-        <PlaceCard />
+        <Link to="specifictouristplace">
+          <PlaceCard />{" "}
+        </Link>
+        <Link to="specifictouristplace">
+          <PlaceCard />{" "}
+        </Link>
+        <Link to="specifictouristplace">
+          <PlaceCard />{" "}
+        </Link>
+        <Link to="specifictouristplace">
+          <PlaceCard />{" "}
+        </Link>
       </div>
       <Link to="alltouristsplaces">
         <button className="mr-10 flex float-right mr-36 mt-6">
@@ -138,7 +146,9 @@ function SpecificDestination() {
         <span className="text-green">B</span>logs
       </div>
       <div className="flex justify-center flex-wrap md:px-28 mx-0.5">
-        <Blogcard />
+        <Link to="/specificblogscreen">
+          <Blogcard />{" "}
+        </Link>
         <div className="flex-1 ml-5">
           <div className="text-2xl font-heading mb-5 mt-2">
             Blogs from Verified Travellers
@@ -150,15 +160,24 @@ function SpecificDestination() {
           </div>
         </div>
         <div className="flex-1">
-          <button className="md:px-16 bg-black text-white mt-5 py-3 rounded-md font-heading float-right mr-8 md:px-0 px-2 flex">
-            More Blogs <img src="next.svg" className="mt-1 ml-6 h-4" />
-          </button>
+          <Link to="blogsforspecificdest">
+            {" "}
+            <button className="md:px-16 bg-black text-white mt-5 py-3 rounded-md font-heading float-right mr-8 md:px-0 px-2 flex">
+              More Blogs <img src="next.svg" className="mt-1 ml-6 h-4" />
+            </button>
+          </Link>
         </div>
       </div>
       <div className="flex justify-center flex-wrap">
-        <Blogcard />
-        <Blogcard />
-        <Blogcard />
+        <Link to="/specificblogscreen">
+          <Blogcard />{" "}
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />{" "}
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />{" "}
+        </Link>
       </div>
       <div className="text-3xl text-center mt-16 mb-10 font-heading">
         <span className="text-green">U</span>pdates

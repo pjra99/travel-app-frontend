@@ -30,17 +30,17 @@ function PhotoGallery() {
       <div className="text-center font-heading text-3xl mt-16">
         <span className="text-green">P</span>hotos
       </div>
-      <div className="flex justify-center  mt-8">
+      <div className="flex justify-between mt-10 mx-32 px-2">
         <FirstPhotos />
         <Photos />
         <Photos />
       </div>
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-between mt-10 mx-32 px-2">
         <Photos />
         <Photos />
         <Photos />
       </div>
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-between mt-10 mx-32 px-2">
         <Photos />
         <Photos />
         <Photos />
