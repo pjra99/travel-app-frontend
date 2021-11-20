@@ -36,12 +36,12 @@ function SpecificDestination() {
             <HotelCard />
           </div>
         </div>
-        <div className="flex-1">
-          <div className="text-3xl font-heading text-black md:mt-0 mt-10 ml-24">
+        <div className="flex-1 md:mr-10 -mr-20">
+          <div className="text-3xl font-heading text-black md:mt-0 ml-16 mt-10">
             <span className="text-green">D</span>iscover the Best Hotel Deals in
             Nanitaal
           </div>
-          <div className="mt-16 text-black md:ml-0 ml-24 ">
+          <div className="mt-16 text-black md:ml-0 ml-10 ">
             Get instant confirmation, last minute hotel deals. Find Hotels For
             Tonight Near to You. No cancellation fees. Exclusive deals. From
             Fasntastic Hotels To Modern Apartments. Easy and Secure payment.
