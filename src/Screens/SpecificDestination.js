@@ -37,7 +37,7 @@ function SpecificDestination() {
           </div>
         </div>
         <div className="flex-1 md:mr-10 -mr-20">
-          <div className="text-3xl font-heading text-black md:mt-0 ml-16 mt-10">
+          <div className="text-3xl font-heading text-black md:mt-0 md:ml-0 ml-16 mt-10">
             <span className="text-green">D</span>iscover the Best Hotel Deals in
             Nanitaal
           </div>

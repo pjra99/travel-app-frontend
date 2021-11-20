@@ -53,16 +53,13 @@ function Home() {
 
       <div className="flex flex-wrap justify-between md:px-28">
         <Link to="/specificblogscreen">
-          {" "}
-          <Blogcard />{" "}
+          <Blogcard />
         </Link>
         <Link to="/specificblogscreen">
-          {" "}
-          <Blogcard />{" "}
+          <Blogcard />
         </Link>
         <Link to="/specificblogscreen">
-          {" "}
-          <Blogcard />{" "}
+          <Blogcard />
         </Link>
       </div>
       <div className="font-heading text-3xl mt-16 mb-10 text-center">

@@ -82,9 +82,11 @@ function App() {
         <Route path="/blogsforspecificdest">
           <BlogsForSpecificDest />
         </Route>
+
         <Route path="/specifictouristplace">
           <SpecificTouristPlace />
         </Route>
+
         <Route path="/specificblogscreen">
           <SpecificBlogSreen />
         </Route>
