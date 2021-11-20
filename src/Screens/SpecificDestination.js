@@ -115,17 +115,17 @@ function SpecificDestination() {
             Search for the Restaurants, know about the user ratings and choose
             where to Eat!
           </div>
-          <div className="bg-lightgreen md:w-99 md:h-44 h-44 pt-3 mt-16">
+          <div className="bg-lightgreen md:w-99 w-60 md:h-44 h-60 pt-3 mt-16">
             <div className="flex flex-wrap">
               <div>
                 <input
                   type="text"
-                  className="py-3 md:px-24 ml-4 rounded-md"
+                  className="py-3 md:w-auto w-full md:px-24 ml-4 rounded-md"
                   placeholder="What do you want to eat?"
                 />
               </div>
               <div>
-                <button className="bg-green rounded-md ml-2 w-14 h-12">
+                <button className="bg-green rounded-md md:ml-2 ml-40 md:mt-0 mt-2 w-14 h-12">
                   <AiOutlineSearch className="text-white ml-3" size={36} />
                 </button>
               </div>

@@ -12,7 +12,7 @@ function SpecificTouristPlace({ name }) {
       <Navbar />
       <div>
         <img src="snow-view.jpg" className="w-full h-96" />
-        <div className="h-20 bg-glassblack -mt-20 absolute w-full flex flex-wrap justify-between px-36 pt-5">
+        <div className="md:h-20 h-52 bg-glassblack -mt-20 absolute w-full flex flex-wrap justify-between md:px-36 px-10 pt-5">
           <div className="font-heading text-2xl  text-white flex flex-wrap">
             Snow view
             <img src="rating.svg" className="h-7 ml-10" />
@@ -28,47 +28,47 @@ function SpecificTouristPlace({ name }) {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center mt-16">
-        <div className="text-xl font-heading"> Reviews </div>
+      <div className="flex flex-wrap justify-center md:mt-16 mt-44">
+        <div className="text-xl font-heading "> Reviews </div>
         <img src="likeicon.svg" className="ml-5" />
         <div className="mt-1 ml-1">101</div>
         <img src="comment.svg" className="h-5 w-8 mt-2 ml-6" />
         <div className="mt-1 ml-1">42</div>
       </div>
-      <div className="flex flex-wrap justify-center mt-10">
+      <div className="flex flex-wrap justify-center md:mt-10">
         <ReviewBox />
         <ReviewBox />
       </div>
-      <div className="flex flex-wrap justify-center mt-10">
+      <div className="flex flex-wrap justify-center md:mt-10">
         <ReviewBox />
         <ReviewBox />
       </div>
-      <div className="flex flex-wrap justify-center mt-10">
+      <div className="flex flex-wrap justify-center md:mt-10">
         <ReviewBox />
         <ReviewBox />
       </div>
-      <div className="flex justify-center mt-16">
+      <div className="flex flex-wrap justify-center mt-16">
         <WriteReview />
       </div>
       <div className="text-center mt-16 mb-10">
         <span className="text-green">P</span>hotos
       </div>
-      <div className="flex justify-between mt-10 mx-32 px-2">
+      <div className="flex flex-wrap justify-between mt-10 md:mx-32 ml-10 px-2">
         <FirstPhotos />
         <Photos />
         <Photos />
       </div>
-      <div className="flex flex-wrap mx-32 px-2 justify-between mt-16">
+      <div className="flex flex-wrap md:mx-32 px-2 justify-between mt-16">
         <div>
           {" "}
           <Dropanddrag />
         </div>
 
         <div>
-          <div className="font-heading text-2xl">
+          <div className="font-heading text-2xl text-center md:text-justify md:mt-0 mt-10">
             Have some pitcures of this Place? Add them!
           </div>
-          <div className="w-72 mt-10">
+          <div className="w-72 mt-10 md:text-justify text-center md:ml-0 ml-12">
             Add the pitcures and let others know about the beauty of this place.
             Just Drag and drop and wait for some time get the aproval.
           </div>

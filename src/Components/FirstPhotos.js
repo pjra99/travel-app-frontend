@@ -1,6 +1,6 @@
 function FirstPhotos() {
   return (
-    <div className="h-60 w-80 relative bg-grey">
+    <div className="h-60 w-80 md:mb-0 mb-3 relative bg-grey">
       <img className="absolute right-7 top-2 opacity-100" src="Ellipse 3.png" />
       <div className="absolute left text-white text-sm:0.875rem pl-4 mt-1">
         Shot by: @anonymous

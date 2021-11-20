@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Signin() {
   return (
     <div
-      className="container-fluid font-body text-black"
+      className="container-fluid lg:h-screen h-full font-body text-black"
       style={{
         backgroundImage: "url(/background.png)",
         backgroundSize: "100% 100%",
