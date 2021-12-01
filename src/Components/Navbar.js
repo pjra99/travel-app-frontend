@@ -48,7 +48,7 @@ function Navbar() {
       <div
         className="md:ml-36 ml-3"
         onClick={() => {
-          setDisplay("block");
+          display === "block" ? setDisplay("none") : setDisplay("block");
         }}
       >
         <img src="hamburger_nav.svg" className="h-8 w-8 md:hidden" />
