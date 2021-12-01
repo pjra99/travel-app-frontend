@@ -4,6 +4,7 @@ import Footer from "../Components/Footer";
 import Blogcard from "../Components/Blogcard";
 import TextEditor from "../Components/TextEditor";
 import Navbar from "../Components/Navbar";
+import { Link } from "react-router-dom";
 
 function Blogs() {
   return (
@@ -22,9 +23,16 @@ function Blogs() {
         <span className="text-green">B</span>logs
       </div>
       <div className="flex flex-wrap justify-between md:px-28 md:mt-7">
-        <Blogcard />
-        <Blogcard />
-        <Blogcard />
+        <Link to="/specificblogscreen">
+          {" "}
+          <Blogcard />{" "}
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />
+        </Link>
       </div>
       <div className="flex flex-wrap justify-between md:px-28 md:mt-7">
         <Blogcard />

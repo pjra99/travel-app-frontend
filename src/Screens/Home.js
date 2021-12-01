@@ -9,7 +9,7 @@ import Horizontalline from "../Components/Horizontalline";
 import Footer from "../Components/Footer";
 import HomePageHeader from "../Components/HomePageHeader";
 import { Link } from "react-router-dom";
-
+import Slideshow from "../Components/Slideshow";
 import { useEffect } from "react";
 function Home() {
   return (
@@ -45,7 +45,7 @@ function Home() {
         <span className="text-green">T</span>rending Places
       </div>
       <div>
-        <Slides />
+        <Slideshow />
       </div>
       <div className="font-heading text-3xl mt-16 mb-10 text-center">
         <span className="text-green">T</span>rending Blogs

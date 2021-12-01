@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="flex flex-wrap mt-16 bg-lightgreen text-green py-6">
+    <div className="flex flex-wrap mt-16 bg-lightgreen font-body text-green py-6">
       <div className="w-68 md:ml-32 ml-20">
         <h2 className="text-xl font-heading mb-4">TravelEzy</h2>
         <p className="font-semibold">
