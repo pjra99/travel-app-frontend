@@ -1,55 +1,55 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
-const colors = ["kerala.jpg", "homebg.jpg", "beach.jpg"];
-const delay = 2500;
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
-function Slideshow() {
-  const [index, setIndex] = useState(0);
-  const timeoutRef = useRef(null);
+const slideImages = [
+  {
+    url: "/himachal.jpg",
+    caption: "Himachal",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.",
+  },
+  {
+    url: "/goa.jpg",
+    caption: "Goa",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.",
+  },
+  {
+    url: "/kerala.jpg",
+    caption: "Kerala",
+    about:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.",
+  },
+];
 
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
-
-  useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
-
-    return () => {
-      resetTimeout();
-    };
-  }, [index]);
-  //   useEffect(() => {
-  //     setIndex((prevIndex) =>
-  //       prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-  //     );
-  //   }, delay);
-
+const Slideshow = () => {
   return (
-    <div className="slideshow">
-      <div
-        className="slideshowSlider"
-        style={{
-          transform: `translate3d(${-index * 100}%, 0, 0)`,
-        }}
-      >
-        <img
-          src={colors[index]}
-          style={{
-            height: "100px",
-          }}
-        />
-      </div>
+    <div className="slide-container px-28 mx-3">
+      <Slide>
+        {slideImages.map((slideImage, index) => (
+          <div className="each-slide flex" key={index}>
+            <div
+              style={{
+                backgroundImage: `url(${slideImage.url})`,
+                backgroundSize: "100% 100%",
+              }}
+              className="w-1/2 h-96"
+            ></div>
+            <div className="px-10 w-1/3">
+              <div className="font-heading text-2xl mb-10">
+                {slideImage.caption}
+              </div>
+              <div>{slideImage.about}</div>
+              <button className="mt-10 bg-black px-8 py-2 font-2xl text-white rounded-md">
+                Explore More
+              </button>
+            </div>
+          </div>
+        ))}
+      </Slide>
     </div>
   );
-}
+};
 
 export default Slideshow;
