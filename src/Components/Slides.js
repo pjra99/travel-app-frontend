@@ -35,7 +35,7 @@ function Slides() {
       <div>
         <Slide className="w-80 md:w-668px">
           {slideImages.map((slideImage, index) => (
-            <div className="each-slide w-668px flex" key={index}>
+            <div className="each-slide md:w-668px flex flex-wrap" key={index}>
               <div
                 className="h-96 w-96 md:w-668px rounded-md"
                 style={{

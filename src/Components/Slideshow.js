@@ -25,18 +25,18 @@ const slideImages = [
 
 const Slideshow = () => {
   return (
-    <div className="slide-container px-28 mx-3">
+    <div className="slide-container md:px-28 mx-3">
       <Slide>
         {slideImages.map((slideImage, index) => (
-          <div className="each-slide flex" key={index}>
+          <div className="each-slide flex flex-wrap" key={index}>
             <div
               style={{
                 backgroundImage: `url(${slideImage.url})`,
                 backgroundSize: "100% 100%",
               }}
-              className="w-1/2 h-96"
+              className="md:w-1/2 w-full h-96"
             ></div>
-            <div className="px-10 w-1/3">
+            <div className="px-10 md:w-1/3">
               <div className="font-heading text-2xl mb-10">
                 {slideImage.caption}
               </div>
