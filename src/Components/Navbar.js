@@ -41,7 +41,7 @@ function Navbar() {
   }, [width]);
 
   return (
-    <div className="flex flex-wrap absolute md:mt-10 mt-0 w-full font-body bg-white justify-between">
+    <div className="flex flex-wrap absolute md:mt-10 mt-0 w-full font-body bg-white justify-between z-10">
       <div className="text-green font-heading md:ml-36 ml-3 md:block hidden">
         Travel Website
       </div>
@@ -51,7 +51,11 @@ function Navbar() {
           display === "block" ? setDisplay("none") : setDisplay("block");
         }}
       >
-        <img src="hamburger_nav.svg" className="h-8 w-8 md:hidden" />
+        <img
+          src="hamburger_nav.svg"
+          className="h-8 w-8 md:hidden"
+          alt="collapsed-menu"
+        />
       </div>
 
       <div
@@ -62,24 +66,36 @@ function Navbar() {
         }}
       >
         <Link to="/home">
-          <div id="home" className="mx-1 md:mx-10">
+          <div
+            id="home"
+            className="mx-1 md:mx-10 md:mt-0 mt-2 md:border-0 border-b border-grey"
+          >
             Home
           </div>
         </Link>
         <Link to="/blogs">
-          <div id="blogs" className="mx-1 md:mx-10">
+          <div
+            id="blogs"
+            className="mx-1 md:mx-10 md:mt-0 mt-2 md:border-0 border-b border-grey"
+          >
             Blogs
           </div>
         </Link>
 
         <Link to="/photogallery">
-          <div id="upload" className="mx-1 md:mx-10">
+          <div
+            id="upload"
+            className="mx-1 md:mx-10 md:mt-0 mt-2 md:border-0 border-b border-grey"
+          >
             Upload{" "}
           </div>
         </Link>
         <Link to="/signin">
           {" "}
-          <div id="login" className="mx-1 md:mx-10">
+          <div
+            id="login"
+            className="mx-1 md:mx-10 md:mt-0 mt-2 md:border-0 border-b border-grey"
+          >
             Log In
           </div>
         </Link>

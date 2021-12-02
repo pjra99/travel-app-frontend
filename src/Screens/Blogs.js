@@ -1,5 +1,3 @@
-import SpecificPlaceHeader from "../Components/SpecificPlaceHeader";
-import PlaceCard from "../Components/Blogcard";
 import Footer from "../Components/Footer";
 import Blogcard from "../Components/Blogcard";
 import TextEditor from "../Components/TextEditor";

@@ -8,7 +8,7 @@ function Footer() {
           explore this world better.
         </p>
       </div>
-      <div className="md:ml-40 ml-20 md:mt-0 mt-5">
+      <div className="md:ml-36 ml-20 md:mt-0 mt-5">
         <h2 className="mb-4 font-semibold">About Us</h2>
         <ul>
           <li className="mb-2">What do we do?</li>
@@ -22,12 +22,12 @@ function Footer() {
           <li>Terms & conditions</li>
         </ul>
       </div>
-      <div className="md:ml-28 ml-20">
+      <div className="md:ml-32 ml-20">
         <div className="flex flex-wrap text-sm">
           {" "}
           <div className="md:mt-2 mt-5">Subscribe to our newsletter</div>{" "}
           <button className="text-white bg-green ml-3 md:p-2 px-2 rounded-md">
-            <img src="next.svg" />
+            <img src="next.svg" alt="next" />
           </button>
         </div>
         <input

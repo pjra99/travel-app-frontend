@@ -8,37 +8,49 @@ function HotelDetailsCard({ name, img1, img2, checkin, checkout, overview }) {
           className="md:w-97 rounded-t-md"
         />
         <div className="flex flex-wrap mt-2">
-          <img src="hotelroom.jpeg" className="w-32 h-24 rounded-bl-md" />
-          <img src="hotelroom.jpeg" className="w-32 h-24 mx-2" />
-          <img src="hotelroom.jpeg" className="w-32 h-24 rounded-br-md" />
+          <img
+            src="hotelroom.jpeg"
+            className="w-32 h-24 rounded-bl-md"
+            alt="hotel's image 1"
+          />
+          <img
+            src="hotelroom.jpeg"
+            className="w-32 h-24 mx-2"
+            alt="hotel's image 2"
+          />
+          <img
+            src="hotelroom.jpeg"
+            className="w-32 h-24 rounded-br-md"
+            alt="hotel's image 3"
+          />
         </div>
       </div>
       <div className="dusra-col md:w-80 md:ml-10">
         <div className="text-4xl font-heading text-green md-mt-0 mt-1">
           Lakeside Inn
         </div>
-        <img src="4star.svg" className="w-36 -ml-1 mt-2" />
+        <img src="4star.svg" className="w-36 -ml-1 mt-2" alt="rating" />
         <div className="text-darkgrey mt-5">Check in 2 PM | Check out 2 PM</div>
         <div className="flex mt-5 ">
-          <img src="tick.svg" />{" "}
+          <img src="tick.svg" alt="Check" />{" "}
           <p className="text-darkgrey ml-2 text-sm">
             Hand Sanitizer / Temperature Screening
           </p>
         </div>
         <div className="flex flex-wrap mt-1">
-          <img src="tick.svg" />{" "}
+          <img src="tick.svg" alt="Check" />{" "}
           <p className="text-darkgrey ml-2 text-sm">
             Hand Sanitizer / Temperature Screening
           </p>
         </div>
         <div className="flex flex-wrap mt-1">
-          <img src="tick.svg" />{" "}
+          <img src="tick.svg" alt="Check" />{" "}
           <p className="text-darkgrey ml-2 text-sm">
             Hand Sanitizer / Temperature Screening
           </p>
         </div>
         <div className="flex flex-wrap mt-1">
-          <img src="tick.svg" />{" "}
+          <img src="tick.svg" alt="Check" />{" "}
           <p className="text-darkgrey ml-2 text-sm">
             Hand Sanitizer / Temperature Screening
           </p>
@@ -60,7 +72,7 @@ function HotelDetailsCard({ name, img1, img2, checkin, checkout, overview }) {
           </div>
           <div className="text-green">₹2101/night</div>
           <div className="flex flex-wrap mt-14">
-            <img src="tick.svg" alt="Check Icon" />
+            <img src="tick.svg" alt="Check" />
             <div className="text-sm text-darkgrey ml-1 mt-1   ">
               Free Cancellation
             </div>
@@ -78,7 +90,7 @@ function HotelDetailsCard({ name, img1, img2, checkin, checkout, overview }) {
             <div className="text-darkgrey mt-2 text-sm flex justify-between">
               <div>trivago</div>
               <button>
-                <img src="down.svg" />
+                <img src="down.svg" alt="Check" />
               </button>
             </div>
             <div className="text-green mt-4">₹2101/night</div>
@@ -94,12 +106,12 @@ function HotelDetailsCard({ name, img1, img2, checkin, checkout, overview }) {
             <div>
               <button className="bg-black text-white  w-36 py-2 px-3 rounded-md mt-3 flex justify-center">
                 <div> Reviews</div>{" "}
-                <img src="downwhite.svg" className="mt-2 ml-2" />
+                <img src="downwhite.svg" className="mt-2 ml-2" alt="Check" />
               </button>
             </div>
           </div>
           <div className="mt-6 ml-4">
-            <img src="mapicon.svg" className="h-28" />
+            <img src="mapicon.svg" className="h-28" alt="Check" />
           </div>
         </div>
       </div>
