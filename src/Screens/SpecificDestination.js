@@ -11,11 +11,13 @@ import Guidelinecard from "../Components/Guidelinecard";
 import Horizontalline from "../Components/Horizontalline";
 import SpecialPackage from "../Components/SpecialPackage";
 import SimilarPlaceCard from "../Components/SimilarPlaceCard";
+import PhotosForSpecificPlace from "../Components/PhotosForSpecificPlace";
 
 function SpecificDestination() {
   return (
     <div className="container-fluid text-black font-body">
       <SpecificPlaceHeader />
+      <PhotosForSpecificPlace />
       <div className="font-heading text-3xl text-center mt-16 text-black ">
         <span className="text-green">H</span>otels
       </div>
