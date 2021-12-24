@@ -82,11 +82,11 @@ function SpecificDestination() {
       <div className="text-3xl font-heading text-center mt-20 text-black">
         <span className="text-green">T</span>ransportation cost
       </div>
-      <div className="flex flex-wrap px-3">
-        <div className="flex-1">
+      <div className="flex px-36">
+        <div className="">
           <SearchForTransport />
         </div>
-        <div className="flex-1 font-heading text-2xl mt-10 text-black">
+        <div className="font-heading text-2xl mt-10 text-black pl-10">
           Search for a Place in Nanital to Know the actual Transportation cost.
         </div>
       </div>
@@ -113,7 +113,7 @@ function SpecificDestination() {
           </div>
         </div>
         <div className="flex-1">
-          <div className="text-2xl font-heading font-200 mt-16">
+          <div className="text-2xl font-heading font-200 mt-16 pr-12">
             Search for the Restaurants, know about the user ratings and choose
             where to Eat!
           </div>
@@ -133,7 +133,7 @@ function SpecificDestination() {
               </div>
             </div>
             <div className="text-center mt-2 text-darkgrey mt-3">OR</div>
-            <button className="md:px-36 pr-3 bg-black text-white ml-5 mt-5 py-3 rounded-md md:px-0 px-5 font-body">
+            <button className="md:px-36 pr-3 bg-black text-white mx-3 mt-5 py-3 rounded-md md:px-0 font-body">
               Restaurants Near Me
             </button>
           </div>
