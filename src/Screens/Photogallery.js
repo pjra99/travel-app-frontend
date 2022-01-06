@@ -11,12 +11,12 @@ function PhotoGallery() {
     <div>
       <SpecificPlaceHeader />
       {/*dropanddrag*/}
-      <div className="flex flex-wrap align-center justify-item-center justify-between md:px-40 mr-30 mt-20 px-200">
+      <div className="flex flex-wrap md:justify-between justify-center md:px-32 mt-20 px-10">
         <div>
           <Dropanddrag />
         </div>
 
-        <div className="md:ml-16 md:w-auto mx-4">
+        <div className=" md:w-auto ">
           <h2 className="font-heading text-2xl md:w-auto font-light mb-8 mt-12">
             Have some pictures of this Place ? Add them!{" "}
           </h2>
@@ -30,17 +30,17 @@ function PhotoGallery() {
       <div className="text-center font-heading text-3xl mt-16">
         <span className="text-green">P</span>hotos
       </div>
-      <div className="flex flex-wrap md:justify-between justify-center mt-10 md:mx-32 md:px-2">
+      <div className="flex flex-wrap md:justify-between justify-center mt-10 md:mx-32 ">
         <FirstPhotos />
         <Photos />
         <Photos />
       </div>
-      <div className="flex flex-wrap md:justify-between justify-center md:mt-10 md:mx-32 md:px-2">
+      <div className="flex flex-wrap md:justify-between justify-center md:mt-10 md:mx-32 ">
         <Photos />
         <Photos />
         <Photos />
       </div>
-      <div className="flex flex-wrap md:justify-between justify-center md:mt-10 md:mx-32 md:px-2">
+      <div className="flex flex-wrap md:justify-between justify-center md:mt-10 md:mx-32 ">
         <Photos />
         <Photos />
         <Photos />

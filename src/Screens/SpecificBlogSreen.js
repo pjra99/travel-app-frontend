@@ -1,6 +1,7 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import Blogcard from "../Components/Blogcard";
+import { Link } from "react-router-dom";
 function SpecificBlogSreen() {
   return (
     <div className="container-fluid">
@@ -74,20 +75,41 @@ function SpecificBlogSreen() {
       <div className="text-center text-3xl font-heading mt-16 mb-10">
         <span className="text-green">O</span>ther Blogs
       </div>
-      <div className="flex flex-wrap justify-between md:px-28 md:mt-7">
-        <Blogcard />
-        <Blogcard />
-        <Blogcard />
+      <div className="flex flex-wrap md:justify-between justify-center md:px-28 md:mt-7">
+        <Link to="/specificblogscreen">
+          {" "}
+          <Blogcard />{" "}
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />
+        </Link>
       </div>
-      <div className="flex flex-wrap justify-between md:px-28 md:mt-7">
-        <Blogcard />
-        <Blogcard />
-        <Blogcard />
+      <div className="flex flex-wrap md:justify-between justify-center md:px-28 md:mt-7">
+        <Link to="/specificblogscreen">
+          {" "}
+          <Blogcard />{" "}
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />
+        </Link>
       </div>
-      <div className="flex flex-wrap justify-between md:px-28 md:mt-7">
-        <Blogcard />
-        <Blogcard />
-        <Blogcard />
+      <div className="flex flex-wrap md:justify-between justify-center md:px-28 md:mt-7">
+        <Link to="/specificblogscreen">
+          {" "}
+          <Blogcard />{" "}
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />
+        </Link>
       </div>
       <Footer />
     </div>

@@ -37,7 +37,7 @@ const Slideshow = () => {
               className="md:w-1/2 w-full h-96"
             ></div>
             <div className="px-10 md:w-1/3">
-              <div className="font-heading text-2xl mb-10">
+              <div className="font-heading text-2xl mb-10 md:mt-0 mt-10">
                 {slideImage.caption}
               </div>
               <div>{slideImage.about}</div>

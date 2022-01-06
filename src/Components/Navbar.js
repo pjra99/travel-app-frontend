@@ -12,7 +12,6 @@ function Navbar() {
       height,
     };
   }
-
   function useWindowDimensions() {
     const [windowDimensions, setWindowDimensions] = useState(
       getWindowDimensions()
@@ -42,12 +41,12 @@ function Navbar() {
 
   return (
     <div className="flex flex-wrap absolute md:mt-10 mt-0 w-full font-body bg-white justify-between z-10">
-      <div className="text-green font-heading md:ml-36 ml-3 md:block hidden">
+      <div className="text-green font-heading md:ml-32 ml-3 md:block hidden">
         Travel Website
       </div>
       <div
         className="md:ml-36 ml-3"
-        onClick={() => {
+        onMouseDown={() => {
           display === "block" ? setDisplay("none") : setDisplay("block");
         }}
       >
@@ -59,16 +58,15 @@ function Navbar() {
       </div>
 
       <div
-        className="justify-between md:mr-32 md:flex flex-wrap hidden md:mt-0 mt-2 md:mr-0 mr-72"
+        className="justify-between md:mr-16 md:flex flex-wrap hidden md:mt-0 mt-2 md:mr-0 mr-72"
         style={{
           display: display,
-          // float: "left",
         }}
       >
         <Link to="/home">
           <div
             id="home"
-            className="mx-1 md:mx-10 md:mt-0 mt-2 md:border-0 border-b border-grey"
+            className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
           >
             Home
           </div>
@@ -76,7 +74,7 @@ function Navbar() {
         <Link to="/blogs">
           <div
             id="blogs"
-            className="mx-1 md:mx-10 md:mt-0 mt-2 md:border-0 border-b border-grey"
+            className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
           >
             Blogs
           </div>
@@ -85,7 +83,7 @@ function Navbar() {
         <Link to="/photogallery">
           <div
             id="upload"
-            className="mx-1 md:mx-10 md:mt-0 mt-2 md:border-0 border-b border-grey"
+            className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
           >
             Upload{" "}
           </div>
@@ -94,7 +92,7 @@ function Navbar() {
           {" "}
           <div
             id="login"
-            className="mx-1 md:mx-10 md:mt-0 mt-2 md:border-0 border-b border-grey"
+            className="mx-1 md:mr-16 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
           >
             Log In
           </div>

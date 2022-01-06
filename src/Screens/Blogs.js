@@ -27,11 +27,11 @@ function Blogs() {
       >
         <Navbar />
       </div>
-      {/* <MyEditor className="h-96" /> */}
+      <MyEditor className="h-96" />
       <div className="text-center font-heading text-3xl mt-16 mb-10">
         <span className="text-green">B</span>logs
       </div>
-      <div className="flex flex-wrap justify-between md:px-28 md:mt-7">
+      <div className="flex flex-wrap md:justify-between justify-center md:px-28 md:mt-7">
         <Link to="/specificblogscreen">
           {" "}
           <Blogcard />{" "}
@@ -43,16 +43,29 @@ function Blogs() {
           <Blogcard />
         </Link>
       </div>
-      <div className="flex flex-wrap justify-between md:px-28 md:mt-7">
-        <Blogcard />
-        <Blogcard />
-        <Blogcard />
+      <div className="flex flex-wrap md:justify-between justify-center md:px-28 md:mt-7">
+        <Link to="/specificblogscreen">
+          {" "}
+          <Blogcard />{" "}
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />
+        </Link>
       </div>
-
-      <div className="flex flex-wrap justify-between md:px-28 md:mt-7">
-        <Blogcard />
-        <Blogcard />
-        <Blogcard />
+      <div className="flex flex-wrap md:justify-between justify-center md:px-28 md:mt-7">
+        <Link to="/specificblogscreen">
+          {" "}
+          <Blogcard />{" "}
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />
+        </Link>
+        <Link to="/specificblogscreen">
+          <Blogcard />
+        </Link>
       </div>
 
       <Footer />
