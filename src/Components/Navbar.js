@@ -28,12 +28,11 @@ function Navbar() {
 
     return windowDimensions;
   }
-
+  //eslint-disable-next-line
   const { height, width } = useWindowDimensions();
   useEffect(() => {
     if (width < 761) {
       setDisplay("none");
-      console.log(window.innerWidth);
     } else {
       setDisplay("flex");
     }

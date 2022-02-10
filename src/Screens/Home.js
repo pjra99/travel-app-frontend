@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-
 import Placebyactivity from "../Components/Placebyactivity";
-import Slides from "../Components/Slides.js";
 import Blogcard from "../Components/Blogcard.js";
 import Placebytype from "../Components/Placebytype";
 import Guidelinecard from "../Components/Guidelinecard";
@@ -10,7 +7,6 @@ import Footer from "../Components/Footer";
 import HomePageHeader from "../Components/HomePageHeader";
 import { Link } from "react-router-dom";
 import Slideshow from "../Components/Slideshow";
-import { useEffect } from "react";
 function Home() {
   return (
     <div className="container-fluid font-body text-black">
@@ -38,7 +34,8 @@ function Home() {
       </div>
       <Link to="/placesbyactivity">
         <button className="mr-10 flex float-right mr-32 pr-2 mt-6">
-          View All <img src="view more.svg" className="w-6 h-6 ml-3" />
+          View All{" "}
+          <img src="view more.svg" className="w-6 h-6 ml-3" alt="some-img" />
         </button>
       </Link>
       <div className="text-center font-heading md:mt-16 mt-20 mb-10 text-3xl">
@@ -74,7 +71,8 @@ function Home() {
       </div>
       <Link to="/placesbytype">
         <button className="mr-10 flex float-right mr-32 pr-2 mt-6">
-          View All <img src="view more.svg" className="w-6 h-6 ml-3" />
+          View All{" "}
+          <img src="view more.svg" className="w-6 h-6 ml-3" alt="some-img" />
         </button>
       </Link>
 
@@ -98,6 +96,7 @@ function Home() {
           <img
             src="/whychooseus1.svg"
             className="h-80 w-full md:block hidden"
+            alt="some-img"
           />
         </div>
         <div className="">
@@ -132,6 +131,7 @@ function Home() {
           <img
             src="/whychooseus1.svg"
             className="h-80 w-full md:block hidden"
+            alt="some-img"
           />
         </div>
       </div>
@@ -140,6 +140,7 @@ function Home() {
           <img
             src="/whychooseus3.svg"
             className="h-80 w-full md:block hidden"
+            alt="some-img"
           />
         </div>
         <div className="">

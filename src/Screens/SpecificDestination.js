@@ -76,7 +76,8 @@ function SpecificDestination() {
       </div>
       <Link to="alltouristsplaces">
         <button className="mr-10 flex float-right mr-36 mt-6">
-          View All <img src="view more.svg" className="w-6 h-6 ml-3" />
+          View All{" "}
+          <img src="view more.svg" className="w-6 h-6 ml-3" alt="some-img" />
         </button>
       </Link>
       <div className="text-3xl font-heading text-center mt-20 text-black">
@@ -165,7 +166,8 @@ function SpecificDestination() {
           <Link to="blogsforspecificdest">
             {" "}
             <button className="md:px-16 bg-black text-white mt-5 py-3 rounded-md font-heading float-right mr-8 md:px-0 px-2 flex">
-              More Blogs <img src="next.svg" className="mt-1 ml-6 h-4" />
+              More Blogs{" "}
+              <img src="next.svg" className="mt-1 ml-6 h-4" alt="some-img" />
             </button>
           </Link>
         </div>

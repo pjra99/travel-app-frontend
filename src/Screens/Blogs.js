@@ -1,8 +1,6 @@
 import Footer from "../Components/Footer";
 import Blogcard from "../Components/Blogcard";
-import TextEditor from "../Components/TextEditor";
 import { useState } from "react";
-import { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router-dom";
 import { Editor, EditorState } from "draft-js";

@@ -4,24 +4,24 @@ function HotelDetailsCard({ name, img1, img2, checkin, checkout, overview }) {
       <div className="pehla-col">
         <img
           src="entrance.jpg"
-          alt="Hotel Main Image"
+          alt="Hotel Main Img"
           className="md:w-97 rounded-t-md"
         />
         <div className="flex flex-wrap mt-2">
           <img
             src="hotelroom.jpeg"
             className="w-32 h-24 rounded-bl-md"
-            alt="hotel's image 1"
+            alt="hotel's img 1"
           />
           <img
             src="hotelroom.jpeg"
             className="w-32 h-24 mx-2"
-            alt="hotel's image 2"
+            alt="hotel's img 2"
           />
           <img
             src="hotelroom.jpeg"
             className="w-32 h-24 rounded-br-md"
-            alt="hotel's image 3"
+            alt="hotel's img 3"
           />
         </div>
       </div>

@@ -38,6 +38,7 @@ function PhotosForSpecificPlace() {
         onClick={() => {
           setMainImg(index);
         }}
+        alt="some-img"
       />
     </div>
   ));
@@ -48,7 +49,7 @@ function PhotosForSpecificPlace() {
       </div>
       <div className="flex">
         <div className="w-2/3 h-98">
-          <img src={ar[mainImg].src} className="h-full w-full" />
+          <img src={ar[mainImg].src} className="h-full w-full" alt="main-img" />
         </div>
         <div className="w-1/3 h-98 overflow-auto">{photos}</div>
       </div>

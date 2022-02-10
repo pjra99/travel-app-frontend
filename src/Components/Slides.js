@@ -26,10 +26,10 @@ function Slides() {
     const interval = setInterval(() => {
       setX(x + 1);
     }, 5000);
-    if (x == slideImages.length - 1) setX(0);
+    if (x === slideImages.length - 1) setX(0);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [x]);
   return (
     <div className="slide-container mb-20 md:mb-0 md:ml-32 ml-10 flex flex-wrap">
       <div>

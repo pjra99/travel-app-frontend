@@ -11,15 +11,20 @@ function SpecificTouristPlace({ name }) {
     <div className="container-fluid font-body">
       <Navbar />
       <div>
-        <img src="snow-view.jpg" className="w-full h-96" />
+        <img src="snow-view.jpg" className="w-full h-96" alt="some-img" />
         <div className="md:h-20 h-52 bg-glassblack -mt-20 absolute w-full flex flex-wrap justify-between md:px-36 px-10 pt-5">
           <div className="font-heading text-2xl  text-white flex flex-wrap">
             Snow view
-            <img src="rating.svg" className="h-7 ml-10" />
+            <img src="rating.svg" className="h-7 ml-10" alt="some-img" />
           </div>
 
           <div className="flex flex-wrap justify-between text-white pt-1 mr-5 ">
-            Locate on map <img src="mapicon.svg" className="w-10 ml-4 -mt-10" />
+            Locate on map{" "}
+            <img
+              src="mapicon.svg"
+              className="w-10 ml-4 -mt-10"
+              alt="some-img"
+            />
           </div>
           <div>
             <button className="bg-green text-white w-44 h-9 rounded-md">
@@ -30,9 +35,9 @@ function SpecificTouristPlace({ name }) {
       </div>
       <div className="flex flex-wrap justify-center md:mt-16 mt-44">
         <div className="text-xl font-heading "> Reviews </div>
-        <img src="likeicon.svg" className="ml-5" />
+        <img src="likeicon.svg" className="ml-5" alt="some-img" />
         <div className="mt-1 ml-1">101</div>
-        <img src="comment.svg" className="h-5 w-8 mt-2 ml-6" />
+        <img src="comment.svg" className="h-5 w-8 mt-2 ml-6" alt="some-img" />
         <div className="mt-1 ml-1">42</div>
       </div>
       <div className="flex flex-wrap justify-center md:mt-10">

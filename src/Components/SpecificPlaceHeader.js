@@ -17,7 +17,11 @@ function SpecificPlaceHeader() {
               <span className="text-4xl md:ml-0 ml-5">Nanitaal,</span>{" "}
               Uttrakhand
             </p>
-            <img src="4star.svg" className="pb-6 pl-1 h-12 md:ml-0 ml-4" />
+            <img
+              src="4star.svg"
+              className="pb-6 pl-1 h-12 md:ml-0 ml-4"
+              alt="rating-icon"
+            />
             <p className="font-body md:px-0 px-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -31,6 +35,7 @@ function SpecificPlaceHeader() {
             <img
               src="valley.jfif"
               className="fi:h-100 fi:w-100 lg:w-88 lg:h-88 h-60 w-56 rounded-md ml-5"
+              alt="main-img"
             />
           </div>
         </div>

@@ -7,7 +7,7 @@ function Blogcard() {
         <img
           src="/user-male.svg"
           className="fi:h-20 fi:w-20 h-16 w-16 ml-5 mt-5"
-          alt="User image"
+          alt="User img"
         />
 
         <div className="fi:text-xl text-lg ml-5 font-semibold mt-10">
