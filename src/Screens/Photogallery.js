@@ -1,9 +1,7 @@
 import SpecificPlaceHeader from "../Components/SpecificPlaceHeader";
 import Dropanddrag from "../Components/Dropanddrag";
 import FirstPhotos from "../Components/FirstPhotos";
-
 import Photos from "../Components/Photos";
-
 import Footer from "../Components/Footer";
 
 function PhotoGallery() {

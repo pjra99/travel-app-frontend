@@ -62,7 +62,7 @@ function Navbar() {
           display: display,
         }}
       >
-        <Link to="/home">
+        <Link to="home">
           <div
             id="home"
             className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
@@ -70,7 +70,7 @@ function Navbar() {
             Home
           </div>
         </Link>
-        <Link to="/blogs">
+        <Link to="blogs">
           <div
             id="blogs"
             className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
@@ -79,7 +79,7 @@ function Navbar() {
           </div>
         </Link>
 
-        <Link to="/photogallery">
+        <Link to="photogallery">
           <div
             id="upload"
             className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
@@ -87,7 +87,7 @@ function Navbar() {
             Upload{" "}
           </div>
         </Link>
-        <Link to="/signin">
+        <Link to="signin">
           {" "}
           <div
             id="login"

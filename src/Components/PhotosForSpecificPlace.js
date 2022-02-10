@@ -4,7 +4,7 @@ function PhotosForSpecificPlace() {
   var ar = [
     {
       src: "nanital-1.jpeg",
-      name: "nanitaal-lake",
+      name: "nanitaal-lakee",
     },
     {
       src: "nanital-2.jpg",
@@ -12,7 +12,7 @@ function PhotosForSpecificPlace() {
     },
     {
       src: "snow-view.jpg",
-      name: "Snow View",
+      name: "Snow Vieww",
     },
     {
       src: "nanital-1.jpeg",
@@ -20,7 +20,7 @@ function PhotosForSpecificPlace() {
     },
     {
       src: "nanital-2.jpg",
-      name: "nanital-2",
+      name: "nanital-23",
     },
     {
       src: "snow-view.jpg",
@@ -31,13 +31,14 @@ function PhotosForSpecificPlace() {
   const [mainImg, setMainImg] = useState(0);
 
   const photos = ar.map((item, index) => (
-    <div className="w-2/3 h-32 mb-4 ml-10 ">
+    <div className="w-2/3 h-32 mb-4 ml-10 " key={item.name}>
       <img
         src={item.src}
         className="h-32 w-full"
         onClick={() => {
           setMainImg(index);
         }}
+        key={item.name}
         alt="some-img"
       />
     </div>

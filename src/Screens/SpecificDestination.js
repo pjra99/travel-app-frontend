@@ -49,7 +49,7 @@ function SpecificDestination() {
             Fasntastic Hotels To Modern Apartments. Easy and Secure payment.
             Best Price Guarantee. Free cancellation. Easy, Fast and Secure.
           </div>
-          <Link to="/hotelspage">
+          <Link to="hotelspage">
             <button className="bg-green text-white text-xl pt-2 font-heading text-center py-2 md:px-8 px-6 rounded-md mt-16 md:ml-0 ml-24">
               Explore more
             </button>{" "}
