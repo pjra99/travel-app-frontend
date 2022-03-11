@@ -1,8 +1,6 @@
 import Footer from "../Components/Footer";
-import PlaceCard from "../Components/PlaceCard";
 import RestaurantCard from "../Components/RestaurantCard";
 import SpecificPlaceHeader from "../Components/SpecificPlaceHeader";
-import PlacesByType from "./PlacesByType";
 
 function AllRestaurants() {
   return (

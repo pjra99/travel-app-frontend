@@ -11,7 +11,7 @@ function HomePageHeader() {
       <Navbar />
       <div className="flex justify-center">
         {/* <div></div> */}
-        <div className="h-80 rounded-md w-80 md:w-568px bg-glassblack mt-44 z-0 absolute md:pl-2">
+        <div className="h-80 rounded-md w-80 md:w-568px w-88 md:px-0 px-2 bg-glassblack mt-44 z-0 absolute md:pl-2">
           <div className="text-white opacity-100 z-10 text-2xl ml-10 md:px-20 font-heading mt-8">
             Need a vacation? Don't worry we got you!
           </div>

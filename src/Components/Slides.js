@@ -26,16 +26,16 @@ function Slides() {
     const interval = setInterval(() => {
       setX(x + 1);
     }, 5000);
-    if (x == slideImages.length - 1) setX(0);
+    if (x === slideImages.length - 1) setX(0);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [x]);
   return (
     <div className="slide-container mb-20 md:mb-0 md:ml-32 ml-10 flex flex-wrap">
       <div>
         <Slide className="w-80 md:w-668px">
           {slideImages.map((slideImage, index) => (
-            <div className="each-slide w-668px flex" key={index}>
+            <div className="each-slide md:w-668px flex flex-wrap" key={index}>
               <div
                 className="h-96 w-96 md:w-668px rounded-md"
                 style={{
