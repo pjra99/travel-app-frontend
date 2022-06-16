@@ -39,3 +39,8 @@ The travel website should include a mix of the following:
 - Wait for the issue to be assigned to you.
 
 - After you are assigned, work and create pull requests.
+
+Live Demo: https://travel-app-frontend-erf7jt659-pjra99.vercel.app/
+
+Note: The backend of this site is in progress.
+
