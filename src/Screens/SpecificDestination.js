@@ -43,7 +43,7 @@ function SpecificDestination() {
             <span className="text-green">D</span>iscover the Best Hotel Deals in
             Nanitaal
           </div>
-          <div className="mt-16 text-black md:ml-0 ml-10 ">
+          <div className="mt-16 text-black md:ml-0 ml-10 text-justify">
             Get instant confirmation, last minute hotel deals. Find Hotels For
             Tonight Near to You. No cancellation fees. Exclusive deals. From
             Fasntastic Hotels To Modern Apartments. Easy and Secure payment.
@@ -148,7 +148,7 @@ function SpecificDestination() {
       <div className="text-3xl font-heading text-center mt-16 mb-10">
         <span className="text-green">B</span>logs
       </div>
-      <div className="flex justify-center flex-wrap md:px-28 mx-0.5">
+      <div className="flex justify-between flex-wrap md:px-28 mx-0.5">
         <Link to="/specificblogscreen">
           <Blogcard />{" "}
         </Link>
@@ -172,7 +172,7 @@ function SpecificDestination() {
           </Link>
         </div>
       </div>
-      <div className="flex justify-center flex-wrap">
+      <div className="flex justify-between flex-wrap md:px-28 mx-0.5 ">
         <Link to="/specificblogscreen">
           <Blogcard />{" "}
         </Link>
