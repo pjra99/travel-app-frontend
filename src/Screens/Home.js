@@ -103,7 +103,7 @@ function Home() {
           <h2 className="font-heading text-2xl font-light mb-6">
             Blogs by Travel <span className="text-green">Bloggers</span>{" "}
           </h2>
-          <p className="md:w-96">
+          <p className="md:w-96 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem
@@ -118,7 +118,7 @@ function Home() {
           <h2 className="font-heading text-2xl font-light mb-6">
             Blogs by Travel <span className="text-green">Bloggers</span>{" "}
           </h2>
-          <p className="md:w-96">
+          <p className="md:w-96 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem
@@ -147,7 +147,7 @@ function Home() {
           <h2 className="font-heading text-2xl font-light mb-6">
             Blogs by Travel <span className="text-green">Bloggers</span>{" "}
           </h2>
-          <p className="md:w-96">
+          <p className="md:w-96 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem

@@ -31,7 +31,7 @@ function Navbar() {
   //eslint-disable-next-line
   const { height, width } = useWindowDimensions();
   useEffect(() => {
-    if (width < 761) {
+    if (width < 1024) {
       setDisplay("none");
     } else {
       setDisplay("flex");
@@ -39,19 +39,19 @@ function Navbar() {
   }, [width]);
 
   return (
-    <div className="flex flex-wrap absolute md:mt-10 mt-0 w-full font-body bg-white justify-between z-10">
-      <div className="text-green font-heading md:ml-32 ml-3 md:block hidden">
+    <div className="flex flex-wrap absolute lg:mt-10 mt-0 w-full font-body bg-white justify-between z-10">
+      <div className="text-green font-heading md:ml-32 ml-3 lg:block hidden">
         Travel Website
       </div>
       <div
-        className="md:ml-36 ml-3"
+        className="lg:ml-36 ml-3"
         onMouseDown={() => {
           display === "block" ? setDisplay("none") : setDisplay("block");
         }}
       >
         <img
           src="hamburger_nav.svg"
-          className="h-8 w-8 md:hidden"
+          className="h-8 w-8 lg:hidden"
           alt="collapsed-menu"
         />
       </div>

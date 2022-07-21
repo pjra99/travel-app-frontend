@@ -6,21 +6,6 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 function Signup() {
-  useEffect(() => {
-    console.log("hi");
-
-    const fetchApi = async () => {
-      const url = `https://5d9c-2409-4053-2c88-f90f-a9d4-8d62-2634-5f8d.ngrok.io/accounts/register/`;
-      const response = await fetch(url);
-
-      const resJson = await response.json();
-
-      console.log(resJson);
-    };
-
-    fetchApi();
-  }, []);
-
   return (
     <div
       className="container-fluid lg:h-screen h-full text-black font-body"

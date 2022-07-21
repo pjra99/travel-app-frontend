@@ -15,7 +15,7 @@ function Blogcard() {
           <div className="text-sm text-darkgrey">@anonymous</div>
         </div>
       </div>
-      <div className="px-5 pt-4 pb-2 fi:text-md">
+      <div className="px-5 pt-4 pb-2 fi:text-md text-justify">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris...

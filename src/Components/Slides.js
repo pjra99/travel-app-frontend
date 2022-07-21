@@ -51,7 +51,7 @@ function Slides() {
         <h2 className="font-heading text-2xl md:mt-0 mt-10">
           {slideImages[x].caption}
         </h2>
-        <p className="mt-10">
+        <p className="mt-10 text-justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum

@@ -9,7 +9,7 @@ function SpecificPlaceHeader() {
       <div className="bg-lightgreen h-100 w-s">
         <Navbar />
         <div className="flex flex-wrap justify-between md:mx-32 ">
-          <div className="w-100 mt-24">
+          <div className="lg:w-100 mt-24">
             <p className="font-heading text-darkgrey pb-6 md:ml-0 ml-5">
               Temp: 23° C, Humidity 87%{" "}
             </p>
@@ -22,7 +22,7 @@ function SpecificPlaceHeader() {
               className="pb-6 pl-1 h-12 md:ml-0 ml-4"
               alt="rating-icon"
             />
-            <p className="font-body md:px-0 px-5">
+            <p className="font-body md:px-0 px-5 text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -31,29 +31,33 @@ function SpecificPlaceHeader() {
               nulla pariatur.{" "}
             </p>
           </div>
-          <div className="mt-24">
+          <div className="lg:mt-24 mt-14 ">
             <img
               src="valley.jfif"
-              className="fi:h-100 fi:w-100 lg:w-88 lg:h-88 h-60 w-56 rounded-md ml-5"
+              className="fi:h-100 fi:w-100 xl:w-88 xl:h-88 lg:h-68 lg:w-64 sm:w-60 w-64 rounded-md md:ml-0 ml-5"
               alt="main-img"
             />
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap mt-10 ml-32">
-        <button className="bg-green text-white text-center px-4 py-2 md:px-8 rounded-md md:ml-0 mt-4 mr-5 ml-32 ">
-          Transport
-        </button>
-        <Link to="/alltouristsplaces">
-          {" "}
-          <button className="bg-black text-white text-center px-2 py-2 md:px-8 rounded-md md:ml-2 mt-4 ml-32">
-            Places to visit
-          </button>{" "}
-        </Link>
+      <div className="flex flex-wrap md:pt-10 lg:pl-32 xl:pr-0 pr-32 lg:justify-start sm:justify-end justify-start sm:mt-0 mt-88">
+        {/* 2 buttons wala flex */}
+        <div className="lg:w-full w-72 md:static relative sm:top-10 sm:left-16">
+          <button className="bg-green text-white text-center lg:ml-0 md:mt-0 py-2 ml-10 rounded-md mt-4 w-44">
+            Transport
+          </button>
+          <Link to="/alltouristsplaces">
+            {" "}
+            <button className="bg-black text-white text-center py-2 rounded-md ml-10 mt-4 w-44">
+              Places to visit
+            </button>{" "}
+          </Link>
+        </div>
       </div>
-      <div className="flex flex-wrap md:justify-between justify-center md:px-32 mt-36 md:mt-20">
+      <div className="flex flex-wrap md:justify-between md:ml-0 ml-5 md:px-32 sm:mt-36 lg:mt-20 ">
         {/* Hara Box */}
-        <div className="md:h-32 h-44 w-80 md:w-98 bg-lightgreen rounded-lg md:mt-0 mt-10 ">
+        <div className="md:h-32 h-44 w-80 md:w-98 bg-lightgreen rounded-lg lg:mt-0 mt-10 mr-10 ">
+          {/* Choose dates wala box */}
           <div className="flex flex-row">
             <div className="text-green mt-5 md:ml-5 ml-2 font-light md:text-2xl">
               {" "}
@@ -79,7 +83,7 @@ function SpecificPlaceHeader() {
           </div>
         </div>
 
-        <div className="md:text-2xl text-lg text-justify md:w-100 w-80 font-light font-heading md:mt-0 mt-10 text-black">
+        <div className="md:text-2xl text-lg text-justify md:w-100 w-80 font-light font-heading xl:mt-0 mt-4 mt-10 text-black">
           Enter the check in and check out dates and know about the availibility
           of best Hotel Deals.
         </div>
