@@ -83,11 +83,11 @@ function SpecificDestination() {
       <div className="text-3xl font-heading text-center mt-20 text-black">
         <span className="text-green">T</span>ransportation cost
       </div>
-      <div className="flex px-36">
+      <div className="flex flex-wrap sm:px-36 sm:justify-between justify-center">
         <div className="">
           <SearchForTransport />
         </div>
-        <div className="font-heading text-2xl mt-10 text-black pl-10">
+        <div className="font-heading text-2xl mt-10 text-black pl-10 w-99 ">
           Search for a Place in Nanital to Know the actual Transportation cost.
         </div>
       </div>

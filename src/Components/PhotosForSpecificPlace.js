@@ -31,10 +31,10 @@ function PhotosForSpecificPlace() {
   const [mainImg, setMainImg] = useState(0);
 
   const photos = ar.map((item, index) => (
-    <div className="w-2/3 h-32 mb-4 ml-10 " key={item.name}>
+    <div className="md:w-2/3 md:h-32 mb-4 ml-4 md:ml-10 " key={item.name}>
       <img
         src={item.src}
-        className="h-32 w-full"
+        className="md:h-32 md:w-full w-36"
         onClick={() => {
           setMainImg(index);
         }}
@@ -44,15 +44,15 @@ function PhotosForSpecificPlace() {
     </div>
   ));
   return (
-    <div className="md:px-36">
+    <div className="lg:px-36 px-8 sm:mx-0 mx-2">
       <div className="font-heading text-3xl text-center mt-16 text-black mb-10 ">
         <span className="text-green">P</span>hoto Gallery
       </div>
-      <div className="flex">
-        <div className="w-2/3 h-98">
+      <div className="flex justify-center">
+        <div className="w-2/3 md:h-98 h-44">
           <img src={ar[mainImg].src} className="h-full w-full" alt="main-img" />
         </div>
-        <div className="w-1/3 h-98 overflow-auto">{photos}</div>
+        <div className="w-1/3 md:h-98 h-44 overflow-auto">{photos}</div>
       </div>
     </div>
   );
