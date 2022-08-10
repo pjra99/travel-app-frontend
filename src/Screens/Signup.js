@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Signup() {
   return (
     <div
-      className="container-fluid lg:h-screen h-full text-black font-body"
+      className="container-fluid h-screen text-black font-body"
       style={{
         backgroundImage: "url(/background.png)",
         backgroundSize: "100% 100%",
