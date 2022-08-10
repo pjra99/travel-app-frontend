@@ -40,7 +40,7 @@ The travel website should include a mix of the following:
 
 - After you are assigned, work and create pull requests.
 
-Live Demo: https://travel-app-frontend-erf7jt659-pjra99.vercel.app/
+Frontend is hosted @https://travel-app-frontend-git-master-pjra99.vercel.app/
 
 Note: The backend of this site is in progress.
 
