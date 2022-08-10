@@ -16,9 +16,9 @@ function Signup() {
       <Navbar />
       <div className="flex justify-center flex-wrap">
         <div></div>
-        <div className="bg-black text-white pr-11 opacity-80 rounded-xl  mt-36 md:mt-28 mx-3 bg-black text-white pr-11 md:h-100 opacity-80 rounded-xl  mt-36 md:mt-28 md:mx-0 mx-3 pb-5">
-          <div className="w-52 font-body mt-6 ml-10 text-lg">Get Started.</div>
-          <div className="ml-10">
+        <div className="bg-black text-white md:w-2/4 lg:w-2/5 xl:w-1/3 px-10 opacity-80 rounded-xl mt-36 md:mt-28 pb-7">
+          <div className="w-52 font-body mt-6 text-lg">Get Started.</div>
+          <div className="">
             Already have an account?
             <Link to="/signin">
               <span className="text-green"> Log in.</span>
@@ -26,7 +26,7 @@ function Signup() {
           </div>
           {/* <GoogleButton style={{width: '12rem', padding: "1rem"}} /> */}
           <div className="flex">
-            <button className="border-2 text-black mt-4 ml-10 px-2 py-1 rounded-md bg-white w-42 flex">
+            <button className="border-2 text-black mt-4  px-2 py-1 rounded-md bg-white w-42 flex">
               <FcGoogle size={30} className="-ml-1" />
               <span className="ml-1 mt-1 pt-0.5 text-xs">
                 Continue with Google
@@ -37,25 +37,25 @@ function Signup() {
               <span className="ml-2 mt-2 text-xs">Continue with Facebook</span>
             </button>
           </div>
-          <div className=" ml-10 mt-6 mb-4">Email Address</div>
-          <div className=" ml-10">
-            <input className="bg-transparent border-b-2 w-72 md:w-96" />
+          <div className="  mt-6 mb-4">Email Address</div>
+          <div className=" ">
+            <input className="bg-transparent border-b-2 w-full" />
           </div>
-          <div className="ml-10 mt-4 mb-4">Password</div>
-          <div className=" ml-10">
-            <input className="bg-transparent border-b-2 w-72 md:w-96" />
+          <div className=" mt-4 mb-4">Password</div>
+          <div className=" ">
+            <input className="bg-transparent border-b-2 w-full" />
           </div>
-          <div className="ml-10 mt-4 mb-4">Confirm Password</div>
-          <div className=" ml-10">
-            <input className="bg-transparent border-b-2 w-72 md:w-96" />
+          <div className=" mt-4 mb-4">Confirm Password</div>
+          <div className=" ">
+            <input className="bg-transparent border-b-2 w-full" />
           </div>
-          <div className="mt-3 ml-10">
+          <div className="mt-3 ">
             <input type="checkbox" /> I agree to{" "}
             <span className="text-green">terms</span> &{" "}
             <span className="text-green">conditions.</span>
           </div>
           <Link to="/home">
-            <button className="rounded-md text-center ml-10 p-2 border-darkgrey mt-6 bg-green md:w-96">
+            <button className="rounded-md text-center py-2  border-darkgrey mt-6 bg-green w-full">
               Sign Up
             </button>
           </Link>

@@ -15,13 +15,13 @@ function Signin() {
     >
       <Navbar />
       <div className="flex h-screen justify-center">
-        <div className="bg-black text-white pr-11 h-100 opacity-80 rounded-xl  mt-36 md:mt-28 mx-3 ">
-          <div className="md:w-52 font-body mt-6 ml-10 text-lg">
+        <div className="bg-black text-white md:w-2/4 lg:w-2/5 xl:w-1/3 px-10 h-100 opacity-80 rounded-xl mt-36 md:mt-28">
+          <div className="md:w-52 font-body mt-6  text-lg">
             Login and explore your favourite destinations.
           </div>
           {/* <GoogleButton style={{width: '12rem', padding: "1rem"}} /> */}
           <div className="flex">
-            <button className="border-2 text-black mt-4 ml-10 px-2 py-1 rounded-md bg-white w-42 flex">
+            <button className="border-2 text-black mt-4  px-2 py-1 rounded-md bg-white w-42 flex">
               <FcGoogle size={30} className="-ml-1" />
               <span className="ml-1 mt-1 pt-0.5 text-xs">
                 Continue with Google
@@ -32,24 +32,24 @@ function Signin() {
               <span className="ml-2 mt-2 text-xs">Continue with Facebook</span>
             </button>
           </div>
-          <div className="mt-8 ml-10 md:ml-28">
+          <div className="flex justify-center mt-8">
             Don't have an account?
             <Link to="/signup">
-              <span className="text-green"> Sign Up</span>
+              <span className="text-green">&nbsp;Sign Up</span>
             </Link>
           </div>
 
-          <div className=" ml-10 mt-6 mb-4">Email Address</div>
-          <div className=" ml-10">
-            <input className="bg-transparent border-b-2 w-72 md:w-96" />
+          <div className="  mt-6 mb-4">Email Address</div>
+          <div className=" ">
+            <input className="bg-transparent border-b-2 w-full" />
           </div>
-          <div className="ml-10 mt-4 mb-4">Password</div>
-          <div className="ml-10">
-            <input className="bg-transparent border-b-2 w-72 md:w-96" />
+          <div className=" mt-4 mb-4">Password</div>
+          <div className="">
+            <input className="bg-transparent border-b-2 w-full" />
           </div>
-          <div className="mt-4 ml-10 text-green ">Forgot Password?</div>
+          <div className="mt-4  text-green ">Forgot Password?</div>
           <Link to="/home">
-            <button className="rounded-md text-center ml-10 md:w-96 p-2 border-darkgrey mt-4 bg-green">
+            <button className="rounded-md text-center mt-10 md:mt-6 py-2 border-darkgrey w-full mt-4 bg-green">
               {" "}
               Log In
             </button>
