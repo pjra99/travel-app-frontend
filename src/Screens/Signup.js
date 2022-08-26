@@ -1,10 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { ImFacebook2 } from "react-icons/im";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import axios from "axios";
 
 function Signup() {
+  const history = useHistory();
+  var [mail, setMail] = useState("");
+  var [pass, setPass] = useState("");
+  var [cpass, setCPass] = useState("");
+
+  const verifyInputs = () => {
+    if (mail == "" || pass == "" || cpass == "") {
+      alert("All Fields are mandatory!");
+      return false;
+    }
+    if (pass !== cpass) {
+      alert("Passwords doesn't match!");
+      return false;
+    }
+    return true;
+  };
+  const handleSubmit = () => {
+    const data = {
+      email: mail,
+      password: pass,
+    };
+    if (verifyInputs()) {
+      axios
+        .post(`https://localhost:8000/registeredUsers`, {
+          data,
+        })
+        .then((res) => {
+          console.log(res);
+          console.log(res.data);
+        });
+      history.push("/home");
+    }
+  };
   return (
     <div
       className="container-fluid h-screen text-black font-body"
@@ -39,26 +73,50 @@ function Signup() {
           </div>
           <div className="  mt-6 mb-4">Email Address</div>
           <div className=" ">
-            <input className="bg-transparent border-b-2 w-full" />
+            <input
+              className="bg-transparent border-b-2 w-full"
+              id="email"
+              onChange={(e) => {
+                setMail(e.target.value);
+              }}
+              value={mail}
+            />
           </div>
           <div className=" mt-4 mb-4">Password</div>
           <div className=" ">
-            <input className="bg-transparent border-b-2 w-full" />
+            <input
+              className="bg-transparent border-b-2 w-full"
+              id="password"
+              onChange={(e) => {
+                setPass(e.target.value);
+              }}
+              value={pass}
+            />
           </div>
           <div className=" mt-4 mb-4">Confirm Password</div>
           <div className=" ">
-            <input className="bg-transparent border-b-2 w-full" />
+            <input
+              className="bg-transparent border-b-2 w-full"
+              id="confirm-password"
+              onChange={(e) => {
+                setCPass(e.target.value);
+              }}
+              value={cpass}
+            />
           </div>
           <div className="mt-3 ">
             <input type="checkbox" /> I agree to{" "}
             <span className="text-green">terms</span> &{" "}
             <span className="text-green">conditions.</span>
           </div>
-          <Link to="/home">
-            <button className="rounded-md text-center py-2  border-darkgrey mt-6 bg-green w-full">
-              Sign Up
-            </button>
-          </Link>
+          {/* <Link to="/home"> */}
+          <button
+            className="rounded-md text-center py-2  border-darkgrey mt-6 bg-green w-full"
+            onClick={handleSubmit}
+          >
+            Sign Up
+          </button>
+          {/* </Link> */}
         </div>
         <div></div>
       </div>
