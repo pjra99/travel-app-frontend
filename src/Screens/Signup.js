@@ -29,7 +29,7 @@ function Signup() {
     };
     if (verifyInputs()) {
       axios
-        .post(`https://localhost:8000/registeredUsers`, {
+        .post(`https://localhost:8000/users`, {
           data,
         })
         .then((res) => {
