@@ -9,7 +9,6 @@ import Footer from "../Components/Footer";
 function SpecificTouristPlace({ name }) {
   return (
     <div className="container-fluid font-body">
-      <Navbar />
       <div>
         <img src="snow-view.jpg" className="w-full h-96" alt="some-img" />
         <div className="md:h-20 h-52 bg-glassblack -mt-20 absolute w-full flex flex-wrap justify-between md:px-36 px-10 pt-5">

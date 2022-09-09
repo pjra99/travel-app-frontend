@@ -1,13 +1,11 @@
-import React from "react"
-import Navbar from "../Components/Navbar";
+import React from "react";
 
-function User(){
-    return (
-      <div>
-      <Navbar />
+function User() {
+  return (
+    <div>
       <div className="text-center mt-6">This is the User Page</div>
     </div>
-    );
+  );
 }
 
-export default User
+export default User;

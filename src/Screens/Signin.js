@@ -2,9 +2,51 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { ImFacebook2 } from "react-icons/im";
-import { Link } from "react-router-dom";
-
+import { Link, useHistory } from "react-router-dom";
+import { useEffect, useState, useContext } from "react";
+import axios from "axios";
+import Context from "../context/context";
 function Signin() {
+  const [users, setUsers] = useState([]);
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
+  const status = useContext(Context);
+  const history = useHistory();
+  useEffect(() => {
+    axios
+      .get("http://127.0.0.1:8000/registeredUsers")
+      .then((response) => setUsers(response.data.data.registered_users))
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+  const handleSubmit = () => {
+    if (email === "" || pass === "") {
+      alert("All fields are mandatory");
+      return;
+    }
+    let notFound = true;
+    let passwordIncorrect = true;
+    for (let i = 0; i < users.length; i++) {
+      console.log(users[i]);
+      if (users[i].data.email === email) {
+        notFound = false;
+
+        if (users[i].data.password === pass) passwordIncorrect = false;
+      }
+    }
+    if (!notFound && passwordIncorrect) {
+      alert("Password Incorrect");
+      return;
+    }
+    if (notFound) {
+      alert("User with the following email not found!");
+      return;
+    }
+    status.changeLogStatus();
+    history.push("/home");
+  };
+
   return (
     <div
       className="container-fluid lg:h-screen h-full font-body text-black"
@@ -13,7 +55,6 @@ function Signin() {
         backgroundSize: "100% 100%",
       }}
     >
-      <Navbar />
       <div className="flex h-screen justify-center">
         <div className="bg-black text-white md:w-2/4 lg:w-2/5 xl:w-1/3 px-10 h-100 opacity-80 rounded-xl mt-36 md:mt-28">
           <div className="md:w-52 font-body mt-6  text-lg">
@@ -41,19 +82,41 @@ function Signin() {
 
           <div className="  mt-6 mb-4">Email Address</div>
           <div className=" ">
-            <input className="bg-transparent border-b-2 w-full" />
+            <input
+              className="bg-transparent border-b-2 w-full"
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+            />
           </div>
           <div className=" mt-4 mb-4">Password</div>
           <div className="">
-            <input className="bg-transparent border-b-2 w-full" />
+            <input
+              className="bg-transparent border-b-2 w-full"
+              type="password"
+              onChange={(e) => setPass(e.target.value)}
+            />
           </div>
-          <div className="mt-4  text-green ">Forgot Password?</div>
-          <Link to="/home">
-            <button className="rounded-md text-center mt-10 md:mt-6 py-2 border-darkgrey w-full mt-4 bg-green">
-              {" "}
-              Log In
-            </button>
-          </Link>
+          <div
+            className="mt-4  text-green "
+            style={{
+              cursor: "pointer",
+            }}
+            onClick={() => {
+              alert("Oops! This feature is under process as for now.");
+            }}
+          >
+            Forgot Password?
+          </div>
+          {/* <Link to="/home"> */}
+          <button
+            className="rounded-md text-center mt-10 md:mt-6 py-2 border-darkgrey w-full mt-4 bg-green"
+            onClick={handleSubmit}
+          >
+            {" "}
+            Log In
+          </button>
+          {/* </Link> */}
         </div>
       </div>
     </div>

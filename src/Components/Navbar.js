@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { Link, useHistory } from "react-router-dom";
+import { useEffect, useContext } from "react";
+import Context from "../context/context";
 
 function Navbar() {
   const [display, setDisplay] = useState("flex");
-
+  const status = useContext(Context);
+  const history = useHistory();
   function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
     return {
@@ -62,7 +64,7 @@ function Navbar() {
           display: display,
         }}
       >
-        <Link to="home">
+        <Link to="/home">
           <div
             id="home"
             className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
@@ -70,30 +72,38 @@ function Navbar() {
             Home
           </div>
         </Link>
-        <Link to="blogs">
-          <div
-            id="blogs"
-            className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
-          >
-            Blogs
-          </div>
-        </Link>
 
-        <Link to="photogallery">
-          <div
-            id="upload"
-            className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
-          >
-            Upload{" "}
-          </div>
-        </Link>
-        <Link to="signin">
+        <div
+          id="blogs"
+          className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
+          onClick={() => {
+            status.isLoggedIn
+              ? history.push("/blogs")
+              : alert("Log in to see all blogs!");
+          }}
+        >
+          Blogs
+        </div>
+
+        <div
+          id="upload"
+          className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
+          onClick={() => {
+            status.isLoggedIn
+              ? history.push("/photogallery")
+              : alert("Log in to go to the Photogallery");
+          }}
+        >
+          Upload{" "}
+        </div>
+        <Link to="/signin">
           {" "}
           <div
             id="login"
             className="mx-1 md:mr-16 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
+            onClick={status.isLoggedIn ? status.changeLogStatus : ""}
           >
-            Log In
+            {status.isLoggedIn ? <span>Log Out</span> : <span>Log In</span>}
           </div>
         </Link>
       </div>

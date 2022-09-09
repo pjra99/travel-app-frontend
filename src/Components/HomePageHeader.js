@@ -8,7 +8,6 @@ function HomePageHeader() {
       className="container-fluid text-black h-668px"
       style={{ backgroundImage: "url(/homebg.jpg)", backgroundSize: "cover" }}
     >
-      <Navbar />
       <div className="flex justify-center">
         {/* <div></div> */}
         <div className="h-80 rounded-md w-80 md:w-568px w-88 md:px-0 px-2 bg-glassblack mt-44 z-0 absolute md:pl-2">

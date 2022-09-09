@@ -11,9 +11,7 @@ function SpecificBlogSreen() {
           backgroundImage: "url(/writeblogsheaderimage.svg)",
           backgroundSize: "100%",
         }}
-      >
-        <Navbar />
-      </div>
+      ></div>
       <div className="md:h-99 border border-grey flex flex-col md:mx-32 mx-2 py-10 mt-16 px-8">
         <div className="flex flex-wrap justify-between px-8 ">
           <img src="user-male.svg" className="h-24 -m" alt="some-img" />
