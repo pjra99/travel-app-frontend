@@ -1,35 +1,23 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { ImFacebook2 } from "react-icons/im";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
-import Context from "../context/context";
 
 function Signup() {
   const history = useHistory();
-  const status = useContext(Context);
   var [mail, setMail] = useState("");
   var [pass, setPass] = useState("");
   var [cpass, setCPass] = useState("");
-  var [isChecked, setIsChecked] = useState(false);
 
   const verifyInputs = () => {
-    if (mail === "" || pass === "" || cpass === "") {
+    if (mail == "" || pass == "" || cpass == "") {
       alert("All Fields are mandatory!");
       return false;
     }
     if (pass !== cpass) {
       alert("Passwords doesn't match!");
-      return false;
-    }
-    //eslint-disable-next-line
-    if (!mail.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
-      alert("Are bhaiyya galat salat email na daalo");
-      return false;
-    }
-    if (!isChecked) {
-      alert("You need to accept the terms and conditions!");
       return false;
     }
     return true;
@@ -40,20 +28,14 @@ function Signup() {
       password: pass,
     };
     if (verifyInputs()) {
-      alert("Registered");
-      status.changeLogStatus();
-
       axios
-        .post(`http://127.0.0.1:8000/users`, {
+        .post(`https://localhost:8000/registeredUsers`, {
           data,
         })
         .then((res) => {
+          console.log(res);
           console.log(res.data);
-        })
-        .catch((err) => {
-          console.log(err);
         });
-
       history.push("/home");
     }
   };
@@ -65,6 +47,7 @@ function Signup() {
         backgroundSize: "100% 100%",
       }}
     >
+      <Navbar />
       <div className="flex justify-center flex-wrap">
         <div></div>
         <div className="bg-black text-white md:w-2/4 lg:w-2/5 xl:w-1/3 px-10 opacity-80 rounded-xl mt-36 md:mt-28 pb-7">
@@ -104,7 +87,6 @@ function Signup() {
             <input
               className="bg-transparent border-b-2 w-full"
               id="password"
-              type="password"
               onChange={(e) => {
                 setPass(e.target.value);
               }}
@@ -116,7 +98,6 @@ function Signup() {
             <input
               className="bg-transparent border-b-2 w-full"
               id="confirm-password"
-              type="password"
               onChange={(e) => {
                 setCPass(e.target.value);
               }}
@@ -124,21 +105,18 @@ function Signup() {
             />
           </div>
           <div className="mt-3 ">
-            <input
-              type="checkbox"
-              onChange={(e) => {
-                setIsChecked(e.target.value);
-              }}
-            />{" "}
-            I agree to <span className="text-green">terms</span> &{" "}
+            <input type="checkbox" /> I agree to{" "}
+            <span className="text-green">terms</span> &{" "}
             <span className="text-green">conditions.</span>
           </div>
+          {/* <Link to="/home"> */}
           <button
             className="rounded-md text-center py-2  border-darkgrey mt-6 bg-green w-full"
             onClick={handleSubmit}
           >
             Sign Up
           </button>
+          {/* </Link> */}
         </div>
         <div></div>
       </div>
