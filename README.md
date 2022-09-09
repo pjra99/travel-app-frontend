@@ -21,11 +21,12 @@ The travel website should include a mix of the following:
 - Nearest Airport/Railway station information
 - Relevant tips on language and local dialect.
 
-## REQUIREMENT
+## TOOLS
 
 - [ReactJS] - A front-end framework
 - [TailwindCSS] - Class based css styling
 
+<<<<<<< HEAD
 ## How to install on your local machine:
 
 - Intall Node.js
@@ -44,3 +45,5 @@ Frontend is hosted @https://travel-app-frontend-git-master-pjra99.vercel.app/
 
 Note: The backend of this site is in progress.
 
+=======
+>>>>>>> e3523dfe58f69094d792d9033086e0fe9a9b708c
