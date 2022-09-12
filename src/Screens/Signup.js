@@ -1,10 +1,11 @@
 import React, { useState, useContext } from "react";
-import Navbar from "../Components/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { ImFacebook2 } from "react-icons/im";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
 import Context from "../context/context";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Signup() {
   const history = useHistory();
@@ -14,22 +15,23 @@ function Signup() {
   var [cpass, setCPass] = useState("");
   var [isChecked, setIsChecked] = useState(false);
 
+  const notify = (msg) => toast.warning(msg);
   const verifyInputs = () => {
     if (mail === "" || pass === "" || cpass === "") {
-      alert("All Fields are mandatory!");
+      notify("All Fields are mandatory!");
       return false;
     }
     if (pass !== cpass) {
-      alert("Passwords doesn't match!");
+      notify("Passwords doesn't match!");
       return false;
     }
     //eslint-disable-next-line
     if (!mail.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
-      alert("Are bhaiyya galat salat email na daalo");
+      notify("Invalid Email!");
       return false;
     }
     if (!isChecked) {
-      alert("You need to accept the terms and conditions!");
+      notify("You need to accept the terms and conditions.");
       return false;
     }
     return true;
@@ -40,7 +42,7 @@ function Signup() {
       password: pass,
     };
     if (verifyInputs()) {
-      alert("Registered");
+      notify("Succesfully registered.");
       status.changeLogStatus();
 
       axios

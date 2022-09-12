@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
-import Navbar from "./Navbar";
 
 function HomePageHeader() {
   return (

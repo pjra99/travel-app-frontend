@@ -1,4 +1,3 @@
-import Navbar from "../Components/Navbar";
 import ReviewBox from "../Components/ReviewBox";
 import WriteReview from "../Components/WriteReview";
 import FirstPhotos from "../Components/FirstPhotos";

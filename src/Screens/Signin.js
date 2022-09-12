@@ -1,46 +1,53 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { ImFacebook2 } from "react-icons/im";
 import { Link, useHistory } from "react-router-dom";
 import { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import Context from "../context/context";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function Signin() {
   const [users, setUsers] = useState([]);
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const status = useContext(Context);
   const history = useHistory();
+
+  const notify = (msg) => toast.error(msg);
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/registeredUsers")
-      .then((response) => setUsers(response.data.data.registered_users))
+      .get("http://localhost:8000/users")
+      .then((response) => {
+        setUsers(response.data.data.all_users);
+        console.log(response.data.data.all_users);
+      })
       .catch((err) => {
         console.log(err);
       });
   }, []);
   const handleSubmit = () => {
     if (email === "" || pass === "") {
-      alert("All fields are mandatory");
+      notify("All fields are mandatory!");
       return;
     }
     let notFound = true;
     let passwordIncorrect = true;
     for (let i = 0; i < users.length; i++) {
       console.log(users[i]);
-      if (users[i].data.email === email) {
+      if (users[i].email === email) {
         notFound = false;
 
-        if (users[i].data.password === pass) passwordIncorrect = false;
+        if (users[i].password === pass) passwordIncorrect = false;
       }
     }
     if (!notFound && passwordIncorrect) {
-      alert("Password Incorrect");
+      notify("Password Incorrect!");
       return;
     }
     if (notFound) {
-      alert("User with the following email not found!");
+      notify("User with the following email not found!");
       return;
     }
     status.changeLogStatus();

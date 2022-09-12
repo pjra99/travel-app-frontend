@@ -1,5 +1,4 @@
 import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
 import Blogcard from "../Components/Blogcard";
 import { Link } from "react-router-dom";
 function SpecificBlogSreen() {

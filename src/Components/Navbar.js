@@ -2,11 +2,17 @@ import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useEffect, useContext } from "react";
 import Context from "../context/context";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Navbar() {
   const [display, setDisplay] = useState("flex");
   const status = useContext(Context);
   const history = useHistory();
+
+  const notify = (msg) => {
+    toast.info(msg);
+  };
   function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
     return {
@@ -42,6 +48,19 @@ function Navbar() {
 
   return (
     <div className="flex flex-wrap absolute lg:mt-10 mt-0 w-full font-body bg-white justify-between z-10">
+      <ToastContainer
+        position="top-center"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        info
+      />
+
       <div className="text-green font-heading md:ml-32 ml-3 lg:block hidden">
         Travel Website
       </div>
@@ -79,7 +98,7 @@ function Navbar() {
           onClick={() => {
             status.isLoggedIn
               ? history.push("/blogs")
-              : alert("Log in to see all blogs!");
+              : notify("Please login to read all blogs!");
           }}
         >
           Blogs
@@ -91,7 +110,7 @@ function Navbar() {
           onClick={() => {
             status.isLoggedIn
               ? history.push("/photogallery")
-              : alert("Log in to go to the Photogallery");
+              : notify("Please login to upload images.");
           }}
         >
           Upload{" "}
