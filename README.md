@@ -26,7 +26,6 @@ The travel website should include a mix of the following:
 - [ReactJS] - A front-end framework
 - [TailwindCSS] - Class based css styling
 
-<<<<<<< HEAD
 ## How to install on your local machine:
 
 - Intall Node.js
@@ -43,7 +42,6 @@ The travel website should include a mix of the following:
 
 Frontend is hosted @https://travel-app-frontend-git-master-pjra99.vercel.app/
 
-Note: The backend of this site is in progress.
+Note: The backend of this site is not deployed.
 
-=======
->>>>>>> e3523dfe58f69094d792d9033086e0fe9a9b708c
+
