@@ -2,7 +2,7 @@
 
 ## A TRAVELLING WEBSITE.. 
 
-
+Frontend of this Website is deployed @https://travel-app-frontend-bd6cqwf4e-pjra99.vercel.app/
 { 
 A website which will provide information to the users about specific tourists places. Information like tranportation cost, from going to point A to B in a city/destination, means of available transports, popular/high rated restaurants/hotels. It will also contain blogs from different people who have already travelled to that place. 
 
