@@ -8,7 +8,6 @@ A website which will provide information to the users about specific tourists pl
 
 Apart from this it will also show, Trending places, Places by Category (ex: Hillstation, beach) and Places by various activities (ex: Paragliding, trekking)
 }
-![image](https://user-images.githubusercontent.com/62153142/189982004-1693933c-9982-4c74-a55b-4fdf2fcd8842.png)
 
 The travel website should include a mix of the following:
 
