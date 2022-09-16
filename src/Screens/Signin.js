@@ -63,7 +63,7 @@ function Signin() {
       }}
     >
       <div className="flex h-screen justify-center">
-        <div className="bg-black text-white md:w-2/4 lg:w-2/5 xl:w-1/3 px-10 h-100 opacity-80 rounded-xl mt-36 md:mt-28">
+        <div className="bg-black text-white md:w-2/4 lg:w-2/5 xl:w-1/3 px-10 h-100 opacity-80 rounded-xl mt-36 md:mt-28 fi:mt-20 ">
           <div className="md:w-52 font-body mt-6  text-lg">
             Login and explore your favourite destinations.
           </div>

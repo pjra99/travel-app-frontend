@@ -10,8 +10,8 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-      fi: "1360px",
       "2xl": "1536px",
+      fi: { raw: "(max-height: 680px),(max-width:1160px)" },
     },
     colors: {
       transparentblack: "rgba(23, 36, 45, .5)",

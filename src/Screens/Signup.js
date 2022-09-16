@@ -69,7 +69,7 @@ function Signup() {
     >
       <div className="flex justify-center flex-wrap">
         <div></div>
-        <div className="bg-black text-white md:w-2/4 lg:w-2/5 xl:w-1/3 px-10 opacity-80 rounded-xl mt-36 md:mt-28 pb-7">
+        <div className="bg-black text-white md:w-2/4 lg:w-2/5 xl:w-1/3 px-10 opacity-80 rounded-xl mt-36 md:mt-28 pb-7 fi:mt-20 ">
           <div className="w-52 font-body mt-6 text-lg">Get Started.</div>
           <div className="">
             Already have an account?
@@ -80,14 +80,16 @@ function Signup() {
           {/* <GoogleButton style={{width: '12rem', padding: "1rem"}} /> */}
           <div className="flex">
             <button className="border-2 text-black mt-4  px-2 py-1 rounded-md bg-white w-42 flex">
-              <FcGoogle size={30} className="-ml-1" />
-              <span className="ml-1 mt-1 pt-0.5 text-xs">
+              <FcGoogle size={30} className="-ml-1 fi:mt-0.5" />
+              <span className="ml-1 mt-1 pt-0.5 text-xs fi:-mt-1 fi:pt-2 ">
                 Continue with Google
               </span>
             </button>
-            <button className=" mt-4 ml-2 p-2 rounded-md px-2 py-1 bg-blue flex h-14 md:h-10">
-              <ImFacebook2 size={30} className=" -ml-0.5" />
-              <span className="ml-2 mt-2 text-xs">Continue with Facebook</span>
+            <button className=" mt-4 ml-2 p-2 fi:pr-1 fi:h-12 rounded-md px-2 py-1 bg-blue flex h-14 fi:-pt-1 md:h-10">
+              <ImFacebook2 size={30} className=" -ml-0.5 fi:mt-1" />
+              <span className="ml-2 mt-2 text-xs fi:-mt-1 fi:pt-2">
+                Continue with Facebook
+              </span>
             </button>
           </div>
           <div className="  mt-6 mb-4">Email Address</div>
