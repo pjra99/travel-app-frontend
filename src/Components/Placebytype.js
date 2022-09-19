@@ -1,6 +1,6 @@
 function Placebytype(props) {
   return (
-    <div className="h-80 w-56 bg-lightgreen rounded-t-lg md:mt-0 mt-3">
+    <div className="h-80 w-56 bg-lightgreen rounded-t-lg:m-0  m-2 md:mt-0  mt-3">
       <img
         className="h-68 w-full rounded-t-md"
         src={props.img}

@@ -15,7 +15,7 @@ function Home() {
         <span className="text-green">W</span>hat's your Mood?
       </div>
 
-      <div className="flex flex-wrap md:justify-between justify-center md:px-32 md:mx-1 md:ml-0 mt-10">
+      <div className="flex flex-wrap md:justify-between justify-center xl:px-32 px-16 md:mx-1 md:ml-0 mt-10">
         <div>
           <Placebyactivity text="Camping" img="/camping.jpg" />
         </div>
@@ -48,7 +48,7 @@ function Home() {
         <span className="text-green">T</span>rending Blogs
       </div>
 
-      <div className="flex flex-wrap md:justify-between justify-center md:px-28">
+      <div className="flex flex-wrap xl:justify-between justify-center xl:px-28 md:px-16 px-5 ">
         <Link to="/specificblogscreen">
           <Blogcard />
         </Link>
@@ -63,7 +63,7 @@ function Home() {
         <span className="text-green">T</span>ypes of Places
       </div>
 
-      <div className="flex flex-wrap md:justify-between justify-center md:px-32 md:mx-1 md:ml-0 ">
+      <div className="flex flex-wrap tab:justify-between justify-center xl:px-32 md:px-16 px-5 md:mx-1 md:ml-0 ">
         <Placebytype img="/snow-region.jpg" name="Snow Region" />
         <Placebytype img="hillstation.jpeg" name="Hill station" />
         <Placebytype img="valley.jfif" name="Valley" />
@@ -79,7 +79,7 @@ function Home() {
       <div className="font-heading text-3xl pt-16 pb-10 text-center md:mt-0 mt-5">
         <span className="text-green">T</span>ravel Guidelines
       </div>
-      <div className="flex flex-row flex-wrap justify-center">
+      <div className="flex flex-row flex-wrap justify-between  xl:px-32 md:px-16 px-5 ">
         <Guidelinecard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris..." />
         <Horizontalline />
 
@@ -91,11 +91,11 @@ function Home() {
       <div className="text-3xl text-center mt-16 mb-10">
         <span className="text-green">W</span>hy Choose Us?
       </div>
-      <div className="flex flex-wrap md:justify-between justify-center md:px-32 px-5">
+      <div className="flex flex-wrap md:justify-between justify-center xl:px-32 md:px-16 px-5">
         <div>
           <img
             src="/whychooseus1.svg"
-            className="h-80 w-full md:block hidden"
+            className="xl:h-80 lg:h-64 lg:block hidden"
             alt="some-img"
           />
         </div>
@@ -103,7 +103,7 @@ function Home() {
           <h2 className="font-heading text-2xl font-light mb-6">
             Blogs by Travel <span className="text-green">Bloggers</span>{" "}
           </h2>
-          <p className="md:w-96 text-justify">
+          <p className="lg:w-96 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem
@@ -113,12 +113,12 @@ function Home() {
           </p>
         </div>
       </div>
-      <div className="flex flex-wrap md:justify-between justify-center md:px-32 px-5 mt-16 ">
-        <div className="m">
+      <div className="flex flex-wrap md:justify-between justify-center xl:px-32 md:px-16 px-5 mt-16 ">
+        <div className="">
           <h2 className="font-heading text-2xl font-light mb-6">
             Blogs by Travel <span className="text-green">Bloggers</span>{" "}
           </h2>
-          <p className="md:w-96 text-justify">
+          <p className="lg:w-96 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem
@@ -130,16 +130,16 @@ function Home() {
         <div>
           <img
             src="/whychooseus1.svg"
-            className="h-80 w-full md:block hidden"
+            className="xl:h-80 lg:h-64 lg:block hidden"
             alt="some-img"
           />
         </div>
       </div>
-      <div className="flex flex-wrap md:justify-between justify-center md:px-32 px-5 mt-16">
+      <div className="flex flex-wrap md:justify-between justify-center xl:px-32 md:px-16 px-5 mt-16">
         <div>
           <img
             src="/whychooseus3.svg"
-            className="h-80 w-full md:block hidden"
+            className="xl:h-80 lg:h-64 lg:block hidden"
             alt="some-img"
           />
         </div>
@@ -147,7 +147,7 @@ function Home() {
           <h2 className="font-heading text-2xl font-light mb-6">
             Blogs by Travel <span className="text-green">Bloggers</span>{" "}
           </h2>
-          <p className="md:w-96 text-justify">
+          <p className="lg:w-96 text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem

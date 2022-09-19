@@ -8,7 +8,8 @@ module.exports = {
     screens: {
       sm: "640px",
       md: "768px",
-      lg: "1024px",
+      tab: "876px",
+      lg: "1080px",
       xl: "1280px",
       "2xl": "1536px",
       fi: { raw: "(max-height: 680px),(max-width:1160px)" },
