@@ -2,7 +2,7 @@ import React from "react";
 
 function HotelCard() {
   return (
-    <div className="bg-lightgreen w-60 rounded-xl h-60  ">
+    <div className="bg-lightgreen md:w-60 w-30 rounded-xl h-60 xl:my-0 my-6 xl:mx-0 mx-4 ">
       <div>
         <img
           src="hotelroom.jpeg"
@@ -11,13 +11,15 @@ function HotelCard() {
         />
       </div>
       <div className="flex">
-        <div className="ml-3 font-medium text-green pl-2">Some Hotel</div>
-        <div className="font-bold ml-16">4.2</div>
+        <div className="md:ml-4 ml-2 md:text-md text-sm text-green ">
+          Some Hotel
+        </div>
+        <div className="font-bold md:ml-20 ml-12">4.2</div>
         <div>
           <img src="star.svg" className="h-6 w-5 ml-2" alt="star-icon" />
         </div>
       </div>
-      <div className="text-darkgrey text-sm pl-3 ml-2">1798INR/night</div>
+      <div className="text-darkgrey text-sm md:ml-5 ml-2">1798INR/night</div>
     </div>
   );
 }

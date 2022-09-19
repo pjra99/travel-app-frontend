@@ -34,7 +34,7 @@ function SpecificPlaceHeader() {
           <div className="lg:mt-24 mt-14 ">
             <img
               src="valley.jfif"
-              className="fi:h-100 fi:w-100 xl:w-88 xl:h-88 lg:h-68 lg:w-64 sm:w-60 w-64 rounded-md md:ml-0 ml-5"
+              className=" xl:w-88 xl:h-88 lg:h-68 sm:w-60 w-64 rounded-md md:ml-0 ml-5"
               alt="main-img"
             />
           </div>
@@ -54,7 +54,7 @@ function SpecificPlaceHeader() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-wrap md:justify-between md:ml-0 ml-5 md:px-32 sm:mt-36 lg:mt-20 ">
+      <div className="flex flex-wrap lg:justify-between justify-center md:ml-0 ml-5 md:px-32 sm:mt-36 lg:mt-20 ">
         {/* Hara Box */}
         <div className="md:h-32 h-44 w-80 md:w-98 bg-lightgreen rounded-lg lg:mt-0 mt-10 mr-10 ">
           {/* Choose dates wala box */}

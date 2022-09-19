@@ -21,24 +21,26 @@ function SpecificDestination() {
       <div className="font-heading text-3xl text-center mt-16 text-black ">
         <span className="text-green">H</span>otels
       </div>
-      <div className="flex flex-wrap mt-10 md:ml-0">
-        <div className="flex-1 md:ml-36 ml-20 md:pl-0 pl-1">
-          <div className="">
-            <HotelCard />
+      <div className="xl:flex  flex-none flex-wrap mt-10 md:ml-0">
+        <div className="xl:pl-36 xl:pr-10 md:pl-0 pl-1 xl:w-1/2">
+          <div className="flex xl:justify-between justify-center ">
+            <div className="">
+              <HotelCard />
+            </div>
+            <div className="xl:mt-10 xl:ml-10">
+              <HotelCard />
+            </div>
           </div>
-          <div className="mt-10">
-            <HotelCard />
+          <div className="flex xl:justify-between justify-center ">
+            <div className="">
+              <HotelCard />
+            </div>
+            <div className="xl:mt-10 xl:ml-10">
+              <HotelCard />
+            </div>
           </div>
         </div>
-        <div className="flex-1 md:-ml-24 ml-20 md:pl-0 pl-1">
-          <div className="mt-10">
-            <HotelCard />
-          </div>
-          <div className="mt-10">
-            <HotelCard />
-          </div>
-        </div>
-        <div className="flex-1 md:mr-10 -mr-20">
+        <div className="flex-1 xl:ml-10 xl:w-80 w-full xl:mx-0 xl:px-0 xl:mt-0 mt-10 md:px-60">
           <div className="text-3xl font-heading text-black md:mt-0 md:ml-0 ml-16 mt-10">
             <span className="text-green">D</span>iscover the Best Hotel Deals in
             Nanitaal
@@ -94,17 +96,17 @@ function SpecificDestination() {
       <div className="text-center font-heading text-3xl text-black mt-16 mb-10">
         <span className="text-green">R</span>estaurants
       </div>
-      <div className="flex flex-wrap justify-between mt-10 md:px-32 px-16">
+      <div className="xl:flex flex-wrap justify-between mt-10 lg:px-32 px-16">
         <div className="flex-1">
-          <div className="flex flex-wrap px-3">
+          <div className="flex flex-wrap px-3 xl:justify-start justify-center">
             <div>
               <RestaurantCard />
             </div>
-            <div className="md:mt-10 md:ml-10">
+            <div className="md:mt-10 md:ml-10 ">
               <RestaurantCard />
             </div>
           </div>
-          <div className="flex flex-wrap px-2">
+          <div className="flex flex-wrap px-2 xl:justify-start justify-center">
             <div>
               <RestaurantCard />
             </div>
@@ -196,7 +198,7 @@ function SpecificDestination() {
       <div className="text-center text-3xl font-heading mt-16 mb-10">
         <span className="text-green">S</span>pecial Packages
       </div>
-      <div className="flex flex-wrap justify-between md:px-32 md:mx-1 px-20 mx-3">
+      <div className="flex flex-wrap xl:justify-between justify-center md:px-32 md:mx-1 px-20 mx-3">
         <SpecialPackage
           img="hotelroom.jpeg"
           text="5 days, 4 nights"
@@ -229,7 +231,7 @@ function SpecificDestination() {
       <div className="text-3xl text-center font-heading mt-16 mb-10">
         <span className="text-green">S</span>imilar Places
       </div>
-      <div className="flex flex-wrap justify-between md:px-32 md:mx-0 px-20 mx-3">
+      <div className="flex flex-wrap xl:justify-between justify-center md:px-32 md:mx-0 px-20 mx-3">
         <SimilarPlaceCard img="manali.jpg" place="Manali" />
         <SimilarPlaceCard img="manali.jpg" place="Manali" />
         <SimilarPlaceCard img="manali.jpg" place="Manali" />

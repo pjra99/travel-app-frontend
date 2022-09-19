@@ -1,6 +1,6 @@
 function SpecialPackage(props) {
   return (
-    <div className="bg-lightgreen w-56 h-60 mt-5 md:mt-0">
+    <div className="bg-lightgreen w-56 h-60 mt-5 md:mt-0 xl:mx-0 mx-2 xl:my-0 my-4">
       <img src={props.img} className="w-56 h-44" alt="package-img" />
       <div className="flex justify-between mt-1 pt-0.5">
         <div className=" text-green ml-3">{props.text}</div>

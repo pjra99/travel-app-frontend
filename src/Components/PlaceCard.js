@@ -1,6 +1,6 @@
 function PlaceCard() {
   return (
-    <div className="h-72 w-56 bg-lightgreen rounded-xl md:mt-0 mt-10">
+    <div className="h-72 w-56 bg-lightgreen rounded-xl xl:mx-0 mx-2 xl:mt-0 mt-4 ">
       <img
         className="h-56 mb-2 w-full rounded-t-xl"
         src="snow-view.jpg"
