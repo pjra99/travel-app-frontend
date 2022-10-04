@@ -45,8 +45,8 @@ The travel website should include a mix of the following:
 ![Specific place-1](travel-app-screenshots/Screenshot%20(690).png)
 ![Specific place-2](travel-app-screenshots/Screenshot%20(691).png)
 ![Specific place-3](travel-app-screenshots/Screenshot%20(692).png)
-![Specific place-4](travel-app-screenshots/Screenshot%20(693).png)
-![Blog-1](travel-app-screenshots/Screenshot%20(694).png)
+![Blog-1](travel-app-screenshots/Screenshot%20(693).png)
+
 
 
 ## How to contribute?
