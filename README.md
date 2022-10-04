@@ -34,7 +34,7 @@ The travel website should include a mix of the following:
 
 ##Project Images
 
-![sign in] (/travel-app-screenshots/Screenshot%20(683).png?raw=true)
+![sign in] (travel-app-screenshots/Screenshot%20(683).png)
 
 ## How to contribute?
 
