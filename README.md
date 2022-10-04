@@ -34,7 +34,20 @@ The travel website should include a mix of the following:
 
 ##Project Images
 
-![Sign in](travel-app-screenshots/Sign up screen.png.png)
+![Sign in](travel-app-screenshots/Screenshot%20(682).png)
+![Sign up](travel-app-screenshots/Screenshot%20(683).png)
+![Home page -1](travel-app-screenshots/Screenshot%20(684).png)
+![Home page -2](travel-app-screenshots/Screenshot%20(685).png)
+![Home page -3](travel-app-screenshots/Screenshot%20(686).png)
+![Home page -4](travel-app-screenshots/Screenshot%20(687).png)
+![Home page -5](travel-app-screenshots/Screenshot%20(688).png)
+![Home page -6](travel-app-screenshots/Screenshot%20(689).png)
+![Specific place-1](travel-app-screenshots/Screenshot%20(690).png)
+![Specific place-2](travel-app-screenshots/Screenshot%20(691).png)
+![Specific place-3](travel-app-screenshots/Screenshot%20(692).png)
+![Specific place-4](travel-app-screenshots/Screenshot%20(693).png)
+![Blog-1](travel-app-screenshots/Screenshot%20(694).png)
+
 
 ## How to contribute?
 
