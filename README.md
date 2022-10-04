@@ -32,6 +32,8 @@ The travel website should include a mix of the following:
 - Run the command 'npm i' in the project folder
 - Use 'npm start' to start the project
 
+##Project Images
+![sign in] (/travel-app-screenshots/Screenshot%20(683).png?raw=true)
 ## How to contribute?
 
 - Comment on the issue on which you want work, also mention the     changes/additions you are willing to make.
