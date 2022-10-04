@@ -32,6 +32,9 @@ The travel website should include a mix of the following:
 - Run the command 'npm i' in the project folder
 - Use 'npm start' to start the project
 
+##Images of the Project
+
+![Alt Text] (https://drive.google.com/file/d/1PAmPiWQFKr-EEQqrAO5drmPfrCx6PVwz/view?usp=sharing "sign up page")
 ## How to contribute?
 
 - Comment on the issue on which you want work, also mention the     changes/additions you are willing to make.
