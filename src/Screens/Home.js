@@ -7,6 +7,7 @@ import Footer from "../Components/Footer";
 import HomePageHeader from "../Components/HomePageHeader";
 import { Link } from "react-router-dom";
 import Slideshow from "../Components/Slideshow";
+
 function Home() {
   return (
     <div className="container-fluid font-body text-black">

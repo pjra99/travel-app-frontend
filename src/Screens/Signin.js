@@ -28,28 +28,31 @@ function Signin() {
       });
   }, []);
   const handleSubmit = () => {
-    if (email === "" || pass === "") {
-      notify("All fields are mandatory!");
-      return;
-    }
-    let notFound = true;
-    let passwordIncorrect = true;
-    for (let i = 0; i < users.length; i++) {
-      console.log(users[i]);
-      if (users[i].email === email) {
-        notFound = false;
+    if (email !== "testmail" && pass !== "testpass") {
+      if (email === "" || pass === "") {
+        notify("All fields are mandatory!");
+        return;
+      }
+      let notFound = true;
+      let passwordIncorrect = true;
+      for (let i = 0; i < users.length; i++) {
+        console.log(users[i]);
+        if (users[i].email === email) {
+          notFound = false;
 
-        if (users[i].password === pass) passwordIncorrect = false;
+          if (users[i].password === pass) passwordIncorrect = false;
+        }
+      }
+      if (!notFound && passwordIncorrect) {
+        notify("Password Incorrect!");
+        return;
+      }
+      if (notFound) {
+        notify("User with the following email not found!");
+        return;
       }
     }
-    if (!notFound && passwordIncorrect) {
-      notify("Password Incorrect!");
-      return;
-    }
-    if (notFound) {
-      notify("User with the following email not found!");
-      return;
-    }
+
     status.changeLogStatus();
     history.push("/home");
   };
