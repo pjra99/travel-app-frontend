@@ -11,14 +11,14 @@ Apart from this it will also show, Trending places, Places by Category (ex: Hill
 
 The travel website should include a mix of the following:
 
-- A brief summary of the area, with highlights of important places
-- Popular Restaurants & Hotel recommendations with web links to hotel and   booking sites
-- Information about recreation and outdoor activities
+- A brief summary of the area, with highlights of important places.
+- Popular Restaurants & Hotel recommendations with web links to hotel and booking sites.
+- Information about recreation and outdoor activities.
 - Guides to arts and culture, including museums, theaters, and other     attractions
 - Packing tips.
-- Maps and guides
-- Public transport information
-- Nearest Airport/Railway station information
+- Maps and guides.
+- Public transport information.
+- Nearest Airport/Railway station information.
 - Relevant tips on language and local dialect.
 
 ## TOOLS
@@ -32,9 +32,22 @@ The travel website should include a mix of the following:
 - Run the command 'npm i' in the project folder
 - Use 'npm start' to start the project
 
-##Project Images
+## Project Images
 
-![Sign in](travel-app-screenshots/Sign up screen.png.png)
+![Sign in](travel-app-screenshots/Screenshot%20(682).png)
+![Sign up](travel-app-screenshots/Screenshot%20(683).png)
+![Home page -1](travel-app-screenshots/Screenshot%20(684).png)
+![Home page -2](travel-app-screenshots/Screenshot%20(685).png)
+![Home page -3](travel-app-screenshots/Screenshot%20(686).png)
+![Home page -4](travel-app-screenshots/Screenshot%20(687).png)
+![Home page -5](travel-app-screenshots/Screenshot%20(688).png)
+![Home page -6](travel-app-screenshots/Screenshot%20(689).png)
+![Specific place-1](travel-app-screenshots/Screenshot%20(690).png)
+![Specific place-2](travel-app-screenshots/Screenshot%20(691).png)
+![Specific place-3](travel-app-screenshots/Screenshot%20(692).png)
+![Blog-1](travel-app-screenshots/Screenshot%20(693).png)
+
+
 
 ## How to contribute?
 
