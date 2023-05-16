@@ -11,14 +11,14 @@ Apart from this it will also show, Trending places, Places by Category (ex: Hill
 
 The travel website should include a mix of the following:
 
-- A brief summary of the area, with highlights of important places
-- Popular Restaurants & Hotel recommendations with web links to hotel and   booking sites
-- Information about recreation and outdoor activities
+- A brief summary of the area, with highlights of important places.
+- Popular Restaurants & Hotel recommendations with web links to hotel and booking sites.
+- Information about recreation and outdoor activities.
 - Guides to arts and culture, including museums, theaters, and other     attractions
 - Packing tips.
-- Maps and guides
-- Public transport information
-- Nearest Airport/Railway station information
+- Maps and guides.
+- Public transport information.
+- Nearest Airport/Railway station information.
 - Relevant tips on language and local dialect.
 
 ## TOOLS
