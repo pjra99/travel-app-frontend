@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useContext } from "react";
 import Context from "../context/context";
 import { ToastContainer, toast } from "react-toastify";
@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 function Navbar() {
   const [display, setDisplay] = useState("flex");
   const status = useContext(Context);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const notify = (msg) => {
     toast.info(msg);
@@ -97,7 +97,7 @@ function Navbar() {
           className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
           onClick={() => {
             status.isLoggedIn
-              ? history.push("/blogs")
+              ? navigate("/blogs")
               : notify("Please login to read all blogs!");
           }}
         >
@@ -109,7 +109,7 @@ function Navbar() {
           className="mx-1 md:mx-8 md:mt-0 mt-2 md:border-0 border-b border-grey hover:bg-black hover:text-white px-2"
           onClick={() => {
             status.isLoggedIn
-              ? history.push("/photogallery")
+              ? navigate("/photogallery")
               : notify("Please login to upload images.");
           }}
         >

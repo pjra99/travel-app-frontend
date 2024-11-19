@@ -1,7 +1,7 @@
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { ImFacebook2 } from "react-icons/im";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import Context from "../context/context";
@@ -13,7 +13,7 @@ function Signin() {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const status = useContext(Context);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const notify = (msg) => toast.error(msg);
   useEffect(() => {
@@ -54,7 +54,7 @@ function Signin() {
     }
 
     status.changeLogStatus();
-    history.push("/home");
+    navigate("/home");
   };
 
   return (

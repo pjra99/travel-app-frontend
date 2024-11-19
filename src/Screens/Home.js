@@ -7,6 +7,7 @@ import Footer from "../Components/Footer";
 import HomePageHeader from "../Components/HomePageHeader";
 import { Link } from "react-router-dom";
 import Slideshow from "../Components/Slideshow";
+import {placesbyactivity} from "../data/data.js"
 
 function Home() {
   return (
@@ -17,22 +18,7 @@ function Home() {
       </div>
 
       <div className="flex flex-wrap md:justify-between justify-center xl:px-32 px-16 md:mx-1 md:ml-0 mt-10">
-        <div>
-          <Placebyactivity text="Camping" img="/camping.jpg" />
-        </div>
-        <div>
-          <Placebyactivity text="Trekking" img="/trekking.png" />
-        </div>
-        <div>
-          <Placebyactivity
-            text="Mountain Climbing"
-            img="/mountainclimbing.jpg"
-          />
-        </div>
-        <div>
-          <Placebyactivity text="Paragliding" img="/paragliding.jpg" />
-        </div>
-      </div>
+        {placesbyactivity.map((obj, index)=><Placebyactivity text={obj.text} img={obj.img}/>)}      </div>
       <Link to="/placesbyactivity">
         <button className="mr-10 flex float-right mr-32 pr-2 mt-6">
           View All{" "}
@@ -115,7 +101,7 @@ function Home() {
         </div>
       </div>
       <div className="flex flex-wrap md:justify-between justify-center xl:px-32 md:px-16 px-5 mt-16 ">
-        <div className="">
+        
           <h2 className="font-heading text-2xl font-light mb-6">
             Blogs by Travel <span className="text-green">Bloggers</span>{" "}
           </h2>
@@ -127,7 +113,7 @@ function Home() {
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris...
           </p>
-        </div>
+   
         <div>
           <img
             src="/whychooseus1.svg"

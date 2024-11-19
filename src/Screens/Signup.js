@@ -1,14 +1,14 @@
 import React, { useState, useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { ImFacebook2 } from "react-icons/im";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import axios from "axios";
 import Context from "../context/context";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Signup() {
-  const history = useHistory();
+  const navigate = useNavigate();
   const status = useContext(Context);
   var [mail, setMail] = useState("");
   var [pass, setPass] = useState("");
@@ -56,7 +56,7 @@ function Signup() {
           console.log(err);
         });
 
-      history.push("/home");
+      navigate("/home");
     }
   };
   return (

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 import Navbar from "./Components/Navbar";
 import Signin from "./Screens/Signin";
@@ -25,78 +25,30 @@ import States from "./context/states.js";
 function App() {
   return (
     <States>
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Signin />
-          </Route>
+  <Router>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Signin />} />
+      <Route path="/signin" element={<Signin />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/blogs" element={<Blogs />} />
+      <Route path="/user" element={<User />} />
+      <Route path="/upload" element={<Upload />} />
+      <Route path="/alltouristsplaces" element={<AllTouristsPlaces />} />
+      <Route path="/destination" element={<SpecificDestination />} />
+      <Route path="/placesbytype" element={<PlacesByType />} />
+      <Route path="/placesbyactivity" element={<PlacesByActivity />} />
+      <Route path="/photogallery" element={<PhotoGallery />} />
+      <Route path="/allrestaurants" element={<AllRestaurants />} />
+      <Route path="/hotelspage" element={<HotelsPage />} />
+      <Route path="/blogsforspecificdest" element={<BlogsForSpecificDest />} />
+      <Route path="/specifictouristplace" element={<SpecificTouristPlace />} />
+      <Route path="/specificblogscreen" element={<SpecificBlogSreen />} />
+    </Routes>
+  </Router>
+</States>
 
-          <Route path="/signin">
-            <Signin />
-          </Route>
-
-          <Route path="/signup">
-            <Signup />
-          </Route>
-
-          <Route path="/home">
-            <Home />
-          </Route>
-
-          <Route path="/blogs">
-            <Blogs />
-          </Route>
-
-          <Route path="/user">
-            <User />
-          </Route>
-
-          <Route path="/upload">
-            <Upload />
-          </Route>
-
-          <Route path="/alltouristsplaces">
-            <AllTouristsPlaces />
-          </Route>
-
-          <Route path="/destination">
-            <SpecificDestination />
-          </Route>
-
-          <Route path="/placesbytype">
-            <PlacesByType />
-          </Route>
-
-          <Route path="/placesbyactivity">
-            <PlacesByActivity />
-          </Route>
-
-          <Route path="/photogallery">
-            <PhotoGallery />
-          </Route>
-          <Route path="/allrestaurants">
-            <AllRestaurants />
-          </Route>
-
-          <Route path="/hotelspage">
-            <HotelsPage />
-          </Route>
-
-          <Route path="/blogsforspecificdest">
-            <BlogsForSpecificDest />
-          </Route>
-
-          <Route path="/specifictouristplace">
-            <SpecificTouristPlace />
-          </Route>
-
-          <Route path="/specificblogscreen">
-            <SpecificBlogSreen />
-          </Route>
-        </Switch>
-      </Router>
-    </States>
   );
 }
 
