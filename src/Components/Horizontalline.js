@@ -1,9 +1,8 @@
-function Horizontalline(){
+function Horizontalline() {
     return (
-        <div className="border-green h-42 mt-5 mb-5 border-0.5 bg-green md:block hidden">
-         
-        </div>
+      <div className="w-full border-dotted border border-green"></div>
     );
-}
-
-export default Horizontalline
+  }
+  
+  export default Horizontalline;
+  

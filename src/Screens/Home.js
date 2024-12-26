@@ -7,7 +7,7 @@ import Footer from "../Components/Footer";
 import HomePageHeader from "../Components/HomePageHeader";
 import { Link } from "react-router-dom";
 import Slideshow from "../Components/Slideshow";
-import {placesbyactivity} from "../data/data.js"
+import {placesbyactivity, places} from "../data/data.js"
 
 function Home() {
   return (
@@ -35,7 +35,8 @@ function Home() {
         <span className="text-green">T</span>rending Blogs
       </div>
 
-      <div className="flex flex-wrap lg:justify-between justify-center xl:px-28 md:px-16">
+      <div className="flex flex-wrap lg:justify-between tab:justify-center  xl:px-32 md:px-16 px-5 md:mx-1 md:ml-0">
+
         <Link to="/specificblogscreen">
           <Blogcard />
         </Link>
@@ -51,10 +52,8 @@ function Home() {
       </div>
 
       <div className="flex flex-wrap tab:justify-between justify-center xl:px-32 md:px-16 px-5 md:mx-1 md:ml-0 ">
-        <Placebytype img="/snow-region.jpg" name="Snow Region" />
-        <Placebytype img="hillstation.jpeg" name="Hill station" />
-        <Placebytype img="valley.jfif" name="Valley" />
-        <Placebytype img="beach.jpg" name="Beach" />
+       {places.map((obj, index)=><Placebytype img={obj.img} name={obj.name}/>)}
+       
       </div>
       <Link to="/placesbytype">
         <button className="mr-10 flex float-right mr-32 pr-2 mt-6">
@@ -66,14 +65,15 @@ function Home() {
       <div className="font-heading text-3xl pt-16 pb-10 text-center md:mt-0 mt-5">
         <span className="text-green">T</span>ravel Guidelines
       </div>
-      <div className="flex flex-row flex-wrap justify-between  xl:px-32 md:px-16 px-5 ">
+      <div className="flex flex-row flex-wrap justify-between xl:px-32 md:px-16 px-5">
         <Guidelinecard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris..." />
         <Horizontalline />
+        <Guidelinecard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris..." />
+        <Horizontalline />
+        <Guidelinecard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris..." />
+    </div>
 
-        <Guidelinecard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris..." />
-        <Horizontalline />
-        <Guidelinecard text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris..." />
-      </div>
+
 
       <div className="text-3xl text-center mt-16 mb-10">
         <span className="text-green">W</span>hy Choose Us?
@@ -101,7 +101,7 @@ function Home() {
         </div>
       </div>
       <div className="flex flex-wrap md:justify-between justify-center xl:px-32 md:px-16 px-5 mt-16 ">
-        
+        <div>
           <h2 className="font-heading text-2xl font-light mb-6">
             Blogs by Travel <span className="text-green">Bloggers</span>{" "}
           </h2>
@@ -113,7 +113,7 @@ function Home() {
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris...
           </p>
-   
+          </div>
         <div>
           <img
             src="/whychooseus1.svg"
